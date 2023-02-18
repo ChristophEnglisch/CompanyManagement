@@ -1,0 +1,57 @@
+version: ${VERSION}
+
+services:
+  kong-db:
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: kong
+      POSTGRES_PASSWORD: kong
+      POSTGRES_DB: kong
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+      - db-volume:/var/lib/postgresql/data/pgdata
+    healthcheck:
+      test: 'echo "select 1" | psql -U kong kong || exit 1'
+      interval: 1m
+      timeout: 3s
+      retries: 3
+    restart: unless-stopped
+
+  kong:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      KONG_DATABASE: postgres
+      KONG_PG_HOST: kong-db
+      KONG_PG_DATABASE: kong
+      KONG_PG_USER: kong
+      KONG_PG_PASSWORD: kong
+      KONG_PROXY_LISTEN: 0.0.0.0:8000
+      KONG_ADMIN_LISTEN: 0.0.0.0:8001
+      KONG_PROXY_ACCESS_LOG: /dev/stdout
+      KONG_ADMIN_ACCESS_LOG: /dev/stdout
+      KONG_PROXY_ERROR_LOG: /dev/stderr
+      KONG_ADMIN_ERROR_LOG: /dev/stderr
+      KONG_PLUGINS: oidc
+    links:
+      - kong-db
+    # uncomment following line to run migrations for a new database
+    # versuchen den command in eine build datei auszulagern
+    # command: kong migrations bootstrap
+    depends_on:
+      - kong-db
+    healthcheck:
+      test: 'curl -f http://localhost:8001/status || exit 1'
+      interval: 1m
+      timeout: 3s
+      retries: 3
+    restart: unless-stopped
+    ports:
+      - "8001:8001"
+      - "8000:8000"
+
+volumes:
+  db-volume:

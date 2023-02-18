@@ -1,0 +1,4 @@
+create database company_management_appointment;
+create database company_management_document;
+create database company_management_hiring;
+create database company_management_managment;

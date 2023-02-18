@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cenglisch.hiring.domain.job.JobServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-12-29T11:59:38" hostname="MacBook-Pro-von-Christoph.local" time="0.432">
+  <properties/>
+  <testcase name="testAddResponsibleEmployee()" classname="cenglisch.hiring.domain.job.JobServiceTest" time="0.432"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

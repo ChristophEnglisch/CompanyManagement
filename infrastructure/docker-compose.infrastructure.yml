@@ -1,0 +1,36 @@
+version: ${VERSION}
+
+services:
+  database:
+    image: ${SERVICE_NAME}-mariadb
+    build:
+      context: ./database
+      dockerfile: Dockerfile
+    container_name: ${SERVICE_NAME}-mariadb
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_USER=${SERVICE_NAME}
+      - MYSQL_PASSWORD=${SERVICE_NAME}
+    healthcheck:
+      test: [ "CMD", "mysql", "-uroot", "-proot" ]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+  queue:
+    image: rabbitmq:3-management
+    container_name: ${SERVICE_NAME}-queue
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+    environment:
+      - RABBITMQ_DEFAULT_USER=${SERVICE_NAME}
+      - RABBITMQ_DEFAULT_PASS=${SERVICE_NAME}
+  sso:
+    image: jboss/keycloak
+    container_name: ${SERVICE_NAME}-sso
+    environment:
+      - KEYCLOAK_USER=${SERVICE_NAME}
+      - KEYCLOAK_PASSWORD=${SERVICE_NAME}
+    ports:
+      - "8080:8080"

@@ -1,0 +1,28 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+
+    <changeSet id="01" author="cenglisch">
+        <createTable tableName="storage">
+            <column name="id" type="varchar(50)">
+                <constraints nullable="false" />
+            </column>
+            <column name="reference" type="varchar(50)">
+                <constraints nullable="false" />
+            </column>
+            <column name="path" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="content" type="LONGTEXT">
+                <constraints nullable="false" />
+            </column>
+            <column name="document_type" type="tinyint">
+                <constraints nullable="false" />
+            </column>
+        </createTable>
+
+        <addPrimaryKey tableName="storage" columnNames="id"/>
+    </changeSet>
+</databaseChangeLog>
