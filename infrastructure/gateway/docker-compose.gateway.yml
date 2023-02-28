@@ -20,9 +20,7 @@ services:
     restart: unless-stopped
 
   kong:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: kong
     environment:
       KONG_DATABASE: postgres
       KONG_PG_HOST: kong-db
