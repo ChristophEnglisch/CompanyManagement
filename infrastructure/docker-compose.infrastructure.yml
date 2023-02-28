@@ -32,5 +32,13 @@ services:
     environment:
       - KEYCLOAK_USER=${SERVICE_NAME}
       - KEYCLOAK_PASSWORD=${SERVICE_NAME}
+      - DB_VENDOR=mariadb
+      - DB_ADDR=database
+      - DB_USER=root
+      - DB_PORT=3306
+      - DB_PASSWORD=root
     ports:
       - "8080:8080"
+    depends_on:
+      database:
+        condition: service_healthy

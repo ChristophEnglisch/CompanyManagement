@@ -4,6 +4,7 @@ import {documentStore} from "../../store";
 import DocumentDto from "../DocumentDto";
 import DeleteDialog from "../../components/DeleteDialog.vue";
 import {DocumentType} from "../DocumentType";
+import DocumentChecklistService from "./DocumentChecklistService";
 
 @Options({
   components: {
@@ -53,6 +54,10 @@ export default class DocumentUploadComponent extends Vue {
     this.emitter.on('delete-accepted', () => {
       this.deleteDocumentAccepted()
     })
+  }
+
+  mounted() : void {
+    DocumentChecklistService.getFiles()
   }
 
   private handleDocument(document: DocumentDto): void {
