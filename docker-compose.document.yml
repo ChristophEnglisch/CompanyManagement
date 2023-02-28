@@ -26,6 +26,11 @@ services:
     extends:
       file: ./infrastructure/gateway/docker-compose.gateway.yml
       service: kong-db
+  kong-migration:
+    container_name: ${SERVICE_NAME}-document-gateway-migration
+    extends:
+      file: ./infrastructure/gateway/docker-compose.gateway.yml
+      service: migration
   kong:
     container_name: ${SERVICE_NAME}-document-gateway
     extends:
@@ -44,3 +49,4 @@ services:
 
 volumes:
   db-volume:
+  migration-volume:
