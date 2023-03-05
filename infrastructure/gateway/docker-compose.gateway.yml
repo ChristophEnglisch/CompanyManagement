@@ -21,6 +21,9 @@ services:
 
   kong:
     image: kong
+    build:
+      context: .
+      dockerfile: Main.Dockerfile
     environment:
       KONG_DATABASE: postgres
       KONG_PG_HOST: kong-db
@@ -50,7 +53,7 @@ services:
   migration:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Migration.Dockerfile
     environment:
       KONG_DATABASE: postgres
       KONG_PG_HOST: kong-db
