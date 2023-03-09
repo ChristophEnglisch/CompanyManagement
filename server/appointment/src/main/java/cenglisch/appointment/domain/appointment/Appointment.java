@@ -3,7 +3,7 @@ package cenglisch.appointment.domain.appointment;
 import cenglisch.appointment.domain.appointment.date.AppointmentDate;
 import cenglisch.appointment.domain.appointment.exception.AppointmentException;
 import cenglisch.appointment.domain.participant.ParticipantId;
-import cenglisch.common.Default;
+import cenglisch.Default;
 import org.jmolecules.ddd.annotation.AggregateRoot;
 import org.jmolecules.ddd.annotation.Identity;
 

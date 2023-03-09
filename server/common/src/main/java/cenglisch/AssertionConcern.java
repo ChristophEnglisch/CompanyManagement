@@ -1,4 +1,4 @@
-package cenglisch.common;
+package cenglisch;
 
 import java.sql.Date;
 import java.sql.Time;
@@ -6,6 +6,7 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 
 public class AssertionConcern {
+
     protected void assertArgumentNotNull(Object object, String message) {
         if (object == null) {
             throw new IllegalArgumentException(message);

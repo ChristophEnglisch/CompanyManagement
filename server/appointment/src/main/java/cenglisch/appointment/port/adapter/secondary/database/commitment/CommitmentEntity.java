@@ -4,9 +4,9 @@ package cenglisch.appointment.port.adapter.secondary.database.commitment;
 import cenglisch.appointment.domain.commitment.CommitmentState;
 import cenglisch.appointment.port.adapter.secondary.database.appointment.AppointmentEntity;
 import cenglisch.appointment.port.adapter.secondary.database.participant.ParticipantEntity;
-import cenglisch.common.Default;
+import cenglisch.Default;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "commitment")

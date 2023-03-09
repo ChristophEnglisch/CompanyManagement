@@ -1,6 +1,6 @@
 package cenglisch.appointment.domain;
 
-import cenglisch.common.AssertionConcern;
+import cenglisch.AssertionConcern;
 
 @org.jmolecules.ddd.annotation.Entity
 public class Entity extends AssertionConcern {

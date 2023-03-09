@@ -1,11 +1,8 @@
 package cenglisch.appointment.port.adapter.secondary.database.appointment.interview;
 
-import cenglisch.common.Default;
+import cenglisch.Default;
+import jakarta.persistence.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
 
 @Entity
 @Table(name = "appointment_interview")
