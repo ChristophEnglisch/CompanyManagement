@@ -1,6 +1,6 @@
 package cenglisch.hiring.domain.candidate;
 
-import cenglisch.common.domain.Default;
+import cenglisch.Default;
 import cenglisch.hiring.domain.Entity;
 import cenglisch.hiring.domain.candidate.exception.CandidateException;
 import cenglisch.hiring.domain.job.JobId;

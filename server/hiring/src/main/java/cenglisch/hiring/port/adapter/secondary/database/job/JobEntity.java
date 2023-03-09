@@ -1,9 +1,9 @@
 package cenglisch.hiring.port.adapter.secondary.database.job;
 
-import cenglisch.common.domain.Default;
+import cenglisch.Default;
 import cenglisch.hiring.port.adapter.secondary.database.person.PersonEntity;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.Collection;
 
 @Entity

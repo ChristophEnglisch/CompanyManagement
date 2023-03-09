@@ -1,10 +1,10 @@
 package cenglisch.hiring.port.adapter.secondary.database.interview;
 
-import cenglisch.common.domain.Default;
+import cenglisch.Default;
 import cenglisch.hiring.domain.interview.state.InterviewState;
 import cenglisch.hiring.domain.interview.type.InterviewType;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.Date;
 
 @Entity

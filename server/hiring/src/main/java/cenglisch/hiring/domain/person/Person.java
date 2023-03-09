@@ -1,6 +1,6 @@
 package cenglisch.hiring.domain.person;
 
-import cenglisch.common.domain.Default;
+import cenglisch.Default;
 import cenglisch.hiring.domain.Entity;
 
 import java.util.regex.Pattern;

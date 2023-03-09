@@ -1,6 +1,6 @@
 package cenglisch.hiring.domain.interview;
 
-import cenglisch.common.domain.Default;
+import cenglisch.Default;
 import cenglisch.hiring.domain.Entity;
 import cenglisch.hiring.domain.candidate.CandidateId;
 import cenglisch.hiring.domain.interview.exception.InterviewException;
