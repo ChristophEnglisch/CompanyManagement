@@ -1,8 +1,8 @@
 package cenglisch.appointment.port.adapter.secondary.database.participant;
 
-import cenglisch.common.Default;
+import cenglisch.Default;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity(name = "participant")
 public class ParticipantEntity {

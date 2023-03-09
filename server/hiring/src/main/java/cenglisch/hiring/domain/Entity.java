@@ -1,6 +1,6 @@
 package cenglisch.hiring.domain;
 
-import cenglisch.common.AssertionConcern;
+import cenglisch.AssertionConcern;
 
 public class Entity extends AssertionConcern {
 }

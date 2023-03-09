@@ -1,9 +1,9 @@
 package cenglisch.appointment.port.adapter.secondary.database.appointment.date;
 
 import cenglisch.appointment.port.adapter.secondary.database.appointment.AppointmentEntity;
-import cenglisch.common.Default;
+import cenglisch.Default;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 import java.sql.Date;
 import java.sql.Time;

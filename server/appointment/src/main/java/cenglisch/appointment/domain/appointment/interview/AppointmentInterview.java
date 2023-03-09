@@ -1,7 +1,7 @@
 package cenglisch.appointment.domain.appointment.interview;
 
 import cenglisch.appointment.domain.appointment.AppointmentId;
-import cenglisch.common.Default;
+import cenglisch.Default;
 import org.jmolecules.ddd.annotation.Entity;
 
 @Entity

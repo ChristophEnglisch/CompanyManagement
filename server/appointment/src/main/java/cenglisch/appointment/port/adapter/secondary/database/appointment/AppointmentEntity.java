@@ -5,9 +5,9 @@ import cenglisch.appointment.domain.appointment.AppointmentState;
 import cenglisch.appointment.domain.appointment.AppointmentType;
 import cenglisch.appointment.port.adapter.secondary.database.appointment.date.AppointmentDateEntity;
 import cenglisch.appointment.port.adapter.secondary.database.participant.ParticipantEntity;
-import cenglisch.common.Default;
+import cenglisch.Default;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 import java.util.Collection;
 

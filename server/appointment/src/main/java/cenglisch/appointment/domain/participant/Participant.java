@@ -1,6 +1,6 @@
 package cenglisch.appointment.domain.participant;
 
-import cenglisch.common.Default;
+import cenglisch.Default;
 
 public class Participant {
     private ParticipantId participantId;

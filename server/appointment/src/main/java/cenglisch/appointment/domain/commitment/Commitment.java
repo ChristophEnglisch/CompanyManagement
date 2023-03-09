@@ -2,7 +2,7 @@ package cenglisch.appointment.domain.commitment;
 
 import cenglisch.appointment.domain.appointment.AppointmentId;
 import cenglisch.appointment.domain.participant.ParticipantId;
-import cenglisch.common.Default;
+import cenglisch.Default;
 import org.jmolecules.ddd.annotation.Entity;
 import org.jmolecules.ddd.annotation.Identity;
 
