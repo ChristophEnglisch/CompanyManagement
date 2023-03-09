@@ -11,4 +11,3 @@ public interface Repository<Entity, Identifier> {
         return UUID.randomUUID().toString().toUpperCase();
     }
 }
-

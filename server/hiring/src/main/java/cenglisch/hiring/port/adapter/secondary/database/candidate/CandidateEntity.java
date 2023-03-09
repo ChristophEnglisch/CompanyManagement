@@ -1,9 +1,8 @@
 package cenglisch.hiring.port.adapter.secondary.database.candidate;
 
-import cenglisch.common.domain.Default;
+import cenglisch.Default;
 import cenglisch.hiring.domain.candidate.CandidateState;
-
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "candidate")

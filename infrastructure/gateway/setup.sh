@@ -28,7 +28,6 @@ curl -X POST http://localhost:8001/services/document/plugins \
     --data "config.max_age=3600";
 
 # SSO Backend
-
 curl -i -X POST \
   --url http://localhost:8001/services/ \
   --data 'name=sso' \
@@ -43,15 +42,19 @@ curl -k -X POST --url http://localhost:8001/routes/document-route/plugins \
   --data name=oidc \
   --data config.realm=master \
   --data config.client_id=kong \
-  --data config.client_secret=yfSXpyjNCJ7MW1nLIjeeSt9aDT3CEU5N \
-  --data config.discovery=http://localhost:8000/sso/realms/master/.well-known/openid-configuration
+  --data config.client_secret=PsQpZXs32XDGb9ywLZ8KAkm48Pfd2P0k \
+  --data config.discovery=http://sso:8080/auth/realms/master/.well-known/openid-configuration
+
 
 curl -k -X POST --url http://localhost:8001/routes/document-route/plugins \
   --data name=oidc \
   --data config.realm=master \
   --data config.client_id=kong \
-  --data config.client_secret=yfSXpyjNCJ7MW1nLIjeeSt9aDT3CEU5N \
-  --data config.discovery=http://sso:8080/auth/realms/master/.well-known/openid-configuration
-
+  --data config.client_secret=PsQpZXs32XDGb9ywLZ8KAkm48Pfd2P0k \
+  --data config.discovery=http://localhost:8000/sso/realms/master/.well-known/openid-configuration
 
 curl -X OPTIONS http://sso:8080/auth/realms/master/.well-known/openid-configuration -H 'Origin: http://localhost:5173'
+
+
+
+curl -X DELETE --url E9C15E99-39B0-4C9C-ABAD-0765B82610C8

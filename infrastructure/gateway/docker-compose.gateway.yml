@@ -20,10 +20,9 @@ services:
     restart: unless-stopped
 
   kong:
-    image: kong
     build:
       context: .
-      dockerfile: Main.Dockerfile
+      dockerfile: Migration.Dockerfile
     environment:
       KONG_DATABASE: postgres
       KONG_PG_HOST: kong-db
@@ -38,6 +37,9 @@ services:
       KONG_ADMIN_ERROR_LOG: /dev/stderr
     links:
       - kong-db
+    # uncomment following line to run migrations for a new database
+    # versuchen den command in eine build datei auszulagern
+    #command: kong migrations bootstrap
     depends_on:
       - kong-db
     healthcheck:
@@ -50,27 +52,5 @@ services:
       - "8001:8001"
       - "8000:8000"
 
-  migration:
-    build:
-      context: .
-      dockerfile: Migration.Dockerfile
-    environment:
-      KONG_DATABASE: postgres
-      KONG_PG_HOST: kong-db
-      KONG_PG_DATABASE: kong
-      KONG_PG_USER: kong
-      KONG_PG_PASSWORD: kong
-      KONG_PROXY_ACCESS_LOG: /dev/stdout
-      KONG_ADMIN_ACCESS_LOG: /dev/stdout
-      KONG_PROXY_ERROR_LOG: /dev/stderr
-      KONG_ADMIN_ERROR_LOG: /dev/stderr
-    depends_on:
-      - kong-db
-    volumes:
-      - migration-volume:/kong-migrations
-    command: kong migrations bootstrap
-    restart: on-failure
-
 volumes:
   db-volume:
-  migration-volume:
