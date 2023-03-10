@@ -38,6 +38,11 @@ public class JobRepositoryAdapter implements JobRepository {
         return job;
     }
 
+    @Override
+    public void remove(Job job) {
+
+    }
+
     public void delete(JobId id) {
 
     }

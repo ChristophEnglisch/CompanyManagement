@@ -32,6 +32,11 @@ public class PersonRepositoryAdapter implements PersonRepository {
         return person;
     }
 
+    @Override
+    public void remove(Person person) {
+
+    }
+
 
     public boolean existsByEmail(String email) {
         return personRepository.existsByEmail(email);

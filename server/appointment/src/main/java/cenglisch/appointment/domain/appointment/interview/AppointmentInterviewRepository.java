@@ -1,7 +1,8 @@
 package cenglisch.appointment.domain.appointment.interview;
 
-import cenglisch.appointment.domain.Repository;
+
 import cenglisch.appointment.domain.appointment.AppointmentId;
+import cenglisch.domain.model.Repository;
 
 import java.util.Optional;
 

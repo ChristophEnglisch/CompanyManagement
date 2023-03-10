@@ -18,7 +18,7 @@ dependencies {
 	implementation 'org.jmolecules:jmolecules-ddd:1.4.0'
 	implementation 'org.springframework.boot:spring-boot-starter-amqp'
 	implementation 'com.rabbitmq:amqp-client:5.10.0'
-
+	implementation 'org.liquibase:liquibase-core'
 	annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.3.Final'
 	runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
 	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.0'
