@@ -33,6 +33,11 @@ public class CandidateRepositoryAdapter implements CandidateRepository {
         return candidate;
     }
 
+    @Override
+    public void remove(Candidate candidate) {
+
+    }
+
     public String generateId() {
         return CandidateRepository.super.generateId();
     }

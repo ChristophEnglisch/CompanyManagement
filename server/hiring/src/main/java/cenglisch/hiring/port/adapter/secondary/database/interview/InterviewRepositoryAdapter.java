@@ -34,6 +34,11 @@ public class InterviewRepositoryAdapter implements InterviewRepository {
         return interview;
     }
 
+    @Override
+    public void remove(Interview interview) {
+
+    }
+
     public Optional<Interview> findByCandidateId(CandidateId candidateId) {
         Optional<InterviewEntity> optionalInterview = interviewRepository.findByCandidateId(candidateId.getId());
         return optionalInterview.map(interviewEntity -> interviewMapper.mapToInterview(interviewEntity));
