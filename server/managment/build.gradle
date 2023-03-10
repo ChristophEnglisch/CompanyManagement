@@ -8,7 +8,6 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.mapstruct:mapstruct:1.5.3.Final'
     implementation 'org.jmolecules:jmolecules-ddd:1.4.0'
-
     annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.3.Final'
     runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
 }

@@ -3,8 +3,8 @@ version: ${VERSION}
 services:
   document:
     build:
-      context: ./server/document
-      dockerfile: Dockerfile
+      context: ./server
+      dockerfile: document/Dockerfile
     depends_on:
       database:
         condition: service_healthy
