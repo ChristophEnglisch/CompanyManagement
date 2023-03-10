@@ -19,7 +19,7 @@ public class AppointmentInterviewRepositoryAdapter implements AppointmentIntervi
     private AppointmentInterviewMapper appointmentInterviewMapper;
 
     @Override
-    public Optional<AppointmentInterview> findById(AppointmentInterviewId appointmentInterviewId) {
+    public Optional<AppointmentInterview> find(AppointmentInterviewId appointmentInterviewId) {
         Optional<AppointmentInterviewEntity> optionalAppointment = appointmentInterviewJpaRepository.findById(appointmentInterviewId.getId());
         return optionalAppointment.map(appointmentEntity -> appointmentInterviewMapper.toAppointmentInterview(appointmentEntity));
     }
@@ -34,5 +34,10 @@ public class AppointmentInterviewRepositoryAdapter implements AppointmentIntervi
     public AppointmentInterview save(AppointmentInterview appointmentInterview) {
         AppointmentInterviewEntity appointmentInterviewEntity = appointmentInterviewJpaRepository.save(appointmentInterviewMapper.toAppointmentInterviewEntity(appointmentInterview));
         return appointmentInterviewMapper.toAppointmentInterview(appointmentInterviewEntity);
+    }
+
+    @Override
+    public void remove(AppointmentInterview appointmentInterview) {
+
     }
 }

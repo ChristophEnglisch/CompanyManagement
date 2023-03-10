@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.17.xsd"
+        objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
+
+    <changeSet id="1678465383566-7" author="cenglisch">
+        <createIndex indexName="FK8kfvvhitrula54wr41xtq7409" tableName="appointment_participant">
+            <column name="participant_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet id="1678465383566-8" author="cenglisch">
+        <createIndex indexName="FKcu5l9p3dtkatsyywaw89iu6pf" tableName="appointment">
+            <column name="published_appointment_date_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet id="1678465383566-9" author="cenglisch">
+        <createIndex indexName="FKginojeodbm9g0uj7y6dph8w8u" tableName="commitment">
+            <column name="participant_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet id="1678465383566-10" author="cenglisch">
+        <createIndex indexName="FKm1iy38q6sqo9rp1hojwuqt2bt" tableName="commitment">
+            <column name="appointment_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet id="1678465383566-11" author="cenglisch">
+        <createIndex indexName="FKmgcpfxwr1f2ptx25yrg8nnp7b" tableName="appointment_participant">
+            <column name="appointment_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet id="1678465383566-12" author="cenglisch">
+        <createIndex indexName="FKrg8bws2hd4qkn9xc8gqxr8ffj" tableName="appointment_date">
+            <column name="appointment_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet id="1678465383566-13" author="cenglisch">
+        <createIndex indexName="FKsnhavrgtm665ekrbihip6y782" tableName="appointment">
+            <column name="scheduling_participant_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet id="1678465383566-14" author="cenglisch">
+        <addForeignKeyConstraint baseColumnNames="participant_id" baseTableName="appointment_participant"
+                                 constraintName="FK8kfvvhitrula54wr41xtq7409" onDelete="RESTRICT" onUpdate="RESTRICT"
+                                 referencedColumnNames="id" referencedTableName="participant"/>
+    </changeSet>
+    <changeSet id="1678465383566-15" author="cenglisch">
+        <addForeignKeyConstraint baseColumnNames="published_appointment_date_id" baseTableName="appointment"
+                                 constraintName="FKcu5l9p3dtkatsyywaw89iu6pf" onDelete="RESTRICT" onUpdate="RESTRICT"
+                                 referencedColumnNames="id" referencedTableName="appointment_date"/>
+    </changeSet>
+    <changeSet id="1678465383566-16" author="cenglisch">
+        <addForeignKeyConstraint baseColumnNames="participant_id" baseTableName="commitment"
+                                 constraintName="FKginojeodbm9g0uj7y6dph8w8u" onDelete="RESTRICT" onUpdate="RESTRICT"
+                                 referencedColumnNames="id" referencedTableName="participant"/>
+    </changeSet>
+    <changeSet id="1678465383566-17" author="cenglisch">
+        <addForeignKeyConstraint baseColumnNames="appointment_id" baseTableName="commitment"
+                                 constraintName="FKm1iy38q6sqo9rp1hojwuqt2bt" onDelete="RESTRICT" onUpdate="RESTRICT"
+                                 referencedColumnNames="id" referencedTableName="appointment"/>
+    </changeSet>
+    <changeSet id="1678465383566-18" author="cenglisch">
+        <addForeignKeyConstraint baseColumnNames="appointment_id" baseTableName="appointment_participant"
+                                 constraintName="FKmgcpfxwr1f2ptx25yrg8nnp7b" onDelete="RESTRICT" onUpdate="RESTRICT"
+                                 referencedColumnNames="id" referencedTableName="appointment"/>
+    </changeSet>
+    <changeSet id="1678465383566-19" author="cenglisch">
+        <addForeignKeyConstraint baseColumnNames="appointment_id" baseTableName="appointment_date"
+                                 constraintName="FKrg8bws2hd4qkn9xc8gqxr8ffj" onDelete="RESTRICT" onUpdate="RESTRICT"
+                                 referencedColumnNames="id" referencedTableName="appointment"/>
+    </changeSet>
+    <changeSet id="1678465383566-20" author="cenglisch">
+        <addForeignKeyConstraint baseColumnNames="scheduling_participant_id" baseTableName="appointment"
+                                 constraintName="FKsnhavrgtm665ekrbihip6y782" onDelete="RESTRICT" onUpdate="RESTRICT"
+                                 referencedColumnNames="id" referencedTableName="participant"/>
+    </changeSet>
+
+</databaseChangeLog>
