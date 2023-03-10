@@ -8,10 +8,9 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("v1/person")
-public class PersonPresentationRestAdapter {
+public class PersonV1RestAdapter {
     @Autowired
     private PersonApplicationPort personApplicationPort;
-
     @PostMapping
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deposePersonalInformation(@RequestBody DeposePersonalInformation deposePersonalInformation) {

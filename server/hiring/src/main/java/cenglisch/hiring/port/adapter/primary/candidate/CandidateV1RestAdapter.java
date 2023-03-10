@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("v1/candidate")
-public class CandidatePresentationRestAdapter {
+public class CandidateV1RestAdapter {
     @Autowired
     private CandidateApplicationPort candidateApplicationPort;
 
