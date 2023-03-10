@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("v1/interview/type")
-public class InterviewTypePresentationRestAdapter {
+public class InterviewTypeV1RestAdapter {
 
     @Autowired
     private InterviewTypeApplicationPort interviewTypeApplicationPort;

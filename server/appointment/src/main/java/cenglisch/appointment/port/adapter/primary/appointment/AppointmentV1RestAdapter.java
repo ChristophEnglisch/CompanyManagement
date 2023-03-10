@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("v1/appointment")
-public class AppointmentPresentationRestAdapter {
+public class AppointmentV1RestAdapter {
     @Autowired
     private AppointmentApplicationPort appointmentApplicationPort;
 

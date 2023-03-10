@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("v1/participant")
-public class ParticipantPresentationRestAdapter {
+public class ParticipantV1RestAdapter {
 
     @Autowired
     private ParticipantApplicationPort participantApplicationPort;

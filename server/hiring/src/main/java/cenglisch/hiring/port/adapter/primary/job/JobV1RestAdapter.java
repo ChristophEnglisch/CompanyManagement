@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("v1/job")
-public class JobPresentationRestAdapter {
+public class JobV1RestAdapter {
 
     @Autowired
     private JobApplicationPort jobApplicationPort;
