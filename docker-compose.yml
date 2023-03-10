@@ -3,47 +3,47 @@ version: ${VERSION}
 services:
   appointment:
     build:
-      context: ./server/appointment
-      dockerfile: Dockerfile
+      context: ./server
+      dockerfile: appointment/Dockerfile
     depends_on:
       database:
         condition: service_healthy
-    image: companymanagement-appointment
-    container_name: companymanagement-appointment
+    image: ${SERVICE_NAME}-appointment
+    container_name: ${SERVICE_NAME}-appointment
     ports:
       - "8010:8080"
     environment:
-      - SPRING_DATASOURCE_URL=jdbc:mariadb://database:3306/company_managment_appointment
+      - SPRING_DATASOURCE_URL=jdbc:mariadb://database:3306/${SERVICE_NAME}_appointment
       - SPRING_DATASOURCE_USERNAME=root
       - SPRING_DATASOURCE_PASSWORD=root
   hiring:
     build:
-      context: ./server/hiring
-      dockerfile: Dockerfile
+      context: ./server
+      dockerfile: hiring/Dockerfile
     depends_on:
       database:
         condition: service_healthy
-    image: companymanagement-hiring
-    container_name: companymanagement-hiring
+    image: ${SERVICE_NAME}-hiring
+    container_name: ${SERVICE_NAME}-hiring
     ports:
       - "8020:8080"
     environment:
-      - SPRING_DATASOURCE_URL=jdbc:mariadb://database:3306/company_managment_hiring
+      - SPRING_DATASOURCE_URL=jdbc:mariadb://database:3306/${SERVICE_NAME}_hiring
       - SPRING_DATASOURCE_USERNAME=root
       - SPRING_DATASOURCE_PASSWORD=root
   document:
     build:
-        context: ./server/document
-        dockerfile: Dockerfile
+        context: ./server
+        dockerfile: document/Dockerfile
     depends_on:
         database:
             condition: service_healthy
-    image: companymanagement-document
-    container_name: companymanagement-document
+    image: ${SERVICE_NAME}-document
+    container_name: ${SERVICE_NAME}-document
     ports:
         - "8030:8080"
     environment:
-      - SPRING_DATASOURCE_URL=jdbc:mariadb://database:3306/company_managment_document
+      - SPRING_DATASOURCE_URL=jdbc:mariadb://database:3306/${SERVICE_NAME}_document
       - SPRING_DATASOURCE_USERNAME=root
       - SPRING_DATASOURCE_PASSWORD=root
 
