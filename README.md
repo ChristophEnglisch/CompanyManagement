@@ -1,14 +1,5 @@
-# Deployment
+# Company Management
+Dieses Projekt soll meinen Umgang mit einer Fullstack Anwendung repräsentieren.
 
-Before deployment, an adjustment must be made in the hosts file: <br>
-```
-127.0.0.1	sso
-```
-
-At the moment the gateway must be manually configured, please execute the commands, from infrastructure/gateway/setup.sh file
-
-Single Service
-``` bash
-docker-compose -p company-management-document -f docker-compose.document.yml buld
-docker-compose -p company-management-document -f docker-compose.document.yml up
-```
+Es gab auch Services, welche ein Teil eines Schulprojekts waren. <br>
+Diese Präsentation kann man ebenfalls unter dem docs Ordner finden. 

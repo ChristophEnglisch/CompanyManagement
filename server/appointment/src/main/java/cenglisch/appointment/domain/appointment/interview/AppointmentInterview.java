@@ -2,9 +2,8 @@ package cenglisch.appointment.domain.appointment.interview;
 
 import cenglisch.appointment.domain.appointment.AppointmentId;
 import cenglisch.Default;
-import org.jmolecules.ddd.annotation.Entity;
 
-@Entity
+@org.jmolecules.ddd.annotation.Entity
 /** is a class for notation of foreign system id */
 public class AppointmentInterview {
     private final AppointmentInterviewId appointmentInterviewId;
