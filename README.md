@@ -9,6 +9,10 @@ Wieso habe ich mir gerade dieses fachliche Projekt der Firmenverwaltung ausgesuc
 Der Grund dafür ist, dass die Prozesse eines solchen Projektes leicht durchschaubar sind und dafür nicht besondere <br>
 Kenntnisse in einem Bereich benötigt werden. <br>
 Mir war es aber trotzdem wichtig, dass viele Module entstehen, welche Unternehmensprozesse abbilden.<br>
+
+Das Projekt wurde zu Beginn aus der Sicht der Fachabteilung geplant.  
+Danach wurde aus der Sicht des Entwicklers Code geschrieben, welcher sich aber nicht von der entstandenen Fachsprache abwendet.  
+
 <br>
 <br>
 Austauschbarkeit der Infrastruktur:<br>
