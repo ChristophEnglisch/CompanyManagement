@@ -1,7 +1,7 @@
 package cenglisch.appointment.domain.commitment;
 
-import cenglisch.appointment.domain.Repository;
 import cenglisch.appointment.domain.appointment.AppointmentId;
+import cenglisch.domain.model.Repository;
 
 import java.util.Collection;
 

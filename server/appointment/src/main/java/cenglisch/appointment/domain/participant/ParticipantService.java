@@ -1,7 +1,7 @@
 package cenglisch.appointment.domain.participant;
 
-import cenglisch.appointment.domain.EventHandler;
 import cenglisch.appointment.domain.participant.event.ParticipantCreated;
+import cenglisch.domain.model.EventHandler;
 import org.jmolecules.ddd.annotation.Service;
 
 @Service

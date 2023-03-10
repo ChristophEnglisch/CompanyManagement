@@ -1,10 +1,10 @@
 package cenglisch.appointment.domain.participant.event;
 
-import cenglisch.appointment.domain.DomainEvent;
+import cenglisch.appointment.domain.AppointmentDomainEvent;
 import cenglisch.appointment.domain.participant.ParticipantId;
 
-public record ParticipantCreated(ParticipantId participantId) implements DomainEvent {
+public record ParticipantCreated(ParticipantId participantId) implements AppointmentDomainEvent {
     public String topic() {
-        return DomainEvent.super.topic() + "participant";
+        return AppointmentDomainEvent.super.topic() + "participant";
     }
 }

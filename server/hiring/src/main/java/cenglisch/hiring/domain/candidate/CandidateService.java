@@ -1,6 +1,6 @@
 package cenglisch.hiring.domain.candidate;
 
-import cenglisch.hiring.domain.EventHandler;
+import cenglisch.domain.model.EventHandler;
 import cenglisch.hiring.domain.candidate.exception.CandidateApplicationException;
 import cenglisch.hiring.domain.candidate.exception.CandidateException;
 import cenglisch.hiring.domain.candidate.exception.CandidateNotFoundException;

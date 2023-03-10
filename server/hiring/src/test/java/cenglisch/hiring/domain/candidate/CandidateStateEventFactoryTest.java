@@ -36,7 +36,7 @@ public class CandidateStateEventFactoryTest {
         );
     }
 
-    public void eventAssertion(CandidateEvent expectedEvent, CandidateEvent builtCandidateEvent) {
+    public void eventAssertion(CandidateEventHiring expectedEvent, CandidateEventHiring builtCandidateEvent) {
         assertEquals(
                 expectedEvent.candidateId(),
                 builtCandidateEvent.candidateId()

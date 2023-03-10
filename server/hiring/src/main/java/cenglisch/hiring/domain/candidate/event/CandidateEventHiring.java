@@ -1,15 +1,15 @@
 package cenglisch.hiring.domain.candidate.event;
 
-import cenglisch.hiring.domain.DomainEvent;
+import cenglisch.hiring.domain.HiringDomainEvent;
 import cenglisch.hiring.domain.candidate.CandidateId;
 import cenglisch.hiring.domain.job.JobId;
 
-public interface CandidateEvent extends DomainEvent {
+public interface CandidateEventHiring extends HiringDomainEvent {
     CandidateId candidateId();
 
     JobId jobId();
 
     default String topic() {
-        return DomainEvent.super.topic() + ".candidate";
+        return HiringDomainEvent.super.topic() + ".candidate";
     }
 }

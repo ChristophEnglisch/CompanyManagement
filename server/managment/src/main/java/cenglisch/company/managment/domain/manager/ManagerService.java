@@ -1,11 +1,11 @@
 package cenglisch.company.managment.domain.manager;
 
-import cenglisch.company.managment.domain.EventHandler;
 import cenglisch.company.managment.domain.company.CompanyId;
 import cenglisch.company.managment.domain.manager.event.ManagerCreated;
 import cenglisch.company.managment.domain.manager.event.ManagerEvent;
 import cenglisch.company.managment.domain.manager.event.ManagerJoinedCompany;
 import cenglisch.company.managment.domain.manager.event.ManagerLeftCompany;
+import cenglisch.domain.model.EventHandler;
 
 import java.util.Optional;
 import java.util.function.Consumer;
@@ -20,7 +20,7 @@ public class ManagerService {
     }
 
     private Optional<Manager> find(ManagerId managerId) {
-        return managerRepository.findById(managerId);
+        return managerRepository.find(managerId);
     }
 
     public void newManager(String name) {

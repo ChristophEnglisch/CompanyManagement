@@ -16,7 +16,7 @@ public class ParticipantRepositoryAdapter implements ParticipantRepository {
     @Autowired
     private ParticipantMapper participantMapper;
 
-    public Optional<Participant> findById(ParticipantId participantId) {
+    public Optional<Participant> find(ParticipantId participantId) {
         Optional<ParticipantEntity> optionalParticipant = participantJpaRepository.findById(participantId.getId());
         return optionalParticipant.map(participantEntity -> participantMapper.toParticipant(participantEntity));
     }
@@ -26,5 +26,10 @@ public class ParticipantRepositoryAdapter implements ParticipantRepository {
         ParticipantEntity participantEntity = participantMapper.toParticipantEntity(participant);
         participantJpaRepository.saveAndFlush(participantEntity);
         return participantMapper.toParticipant(participantEntity);
+    }
+
+    @Override
+    public void remove(Participant participant) {
+
     }
 }

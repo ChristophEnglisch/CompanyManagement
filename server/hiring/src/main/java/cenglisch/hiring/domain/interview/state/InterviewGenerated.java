@@ -2,9 +2,9 @@ package cenglisch.hiring.domain.interview.state;
 
 import cenglisch.hiring.domain.interview.InterviewId;
 
-public record InterviewGenerated(InterviewId interviewId, String candidateFullName, String candidateEmail) implements InterviewStateEvent {
+public record InterviewGenerated(InterviewId interviewId, String candidateFullName, String candidateEmail) implements InterviewStateEventHiring {
     public String topic() {
-        return InterviewStateEvent.super.topic() + ".generated";
+        return InterviewStateEventHiring.super.topic() + ".generated";
     }
 
     public String toString() {

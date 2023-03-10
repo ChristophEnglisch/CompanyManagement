@@ -25,7 +25,7 @@ public class InterviewStateEventFactoryTest {
         );
     }
 
-    public void eventAssertion(InterviewStateEvent expectedEvent, InterviewStateEvent builtEvent){
+    public void eventAssertion(InterviewStateEventHiring expectedEvent, InterviewStateEventHiring builtEvent){
         assertEquals(
                 expectedEvent.getClass(),
                 builtEvent.getClass()

@@ -1,6 +1,6 @@
 package cenglisch.hiring.domain.person;
 
-import cenglisch.hiring.domain.EventHandler;
+import cenglisch.domain.model.EventHandler;
 import cenglisch.hiring.domain.person.event.PersonVerified;
 import cenglisch.hiring.domain.person.event.PersonalInformationDeposited;
 import cenglisch.hiring.domain.person.exception.PersonException;

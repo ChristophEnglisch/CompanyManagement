@@ -1,7 +1,7 @@
-package cenglisch.hiring.domain;
+package cenglisch.domain.model;
 
 public interface DomainEvent {
     default String topic() {
-        return "hiring";
+        return "company.management";
     }
 }

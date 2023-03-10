@@ -3,7 +3,6 @@ package cenglisch.hiring.port.adapter.secondary.database.job;
 import cenglisch.hiring.domain.job.Job;
 import cenglisch.hiring.domain.job.JobId;
 import cenglisch.hiring.domain.job.JobRepository;
-import cenglisch.hiring.domain.person.PersonId;
 import cenglisch.hiring.port.adapter.secondary.database.person.PersonJpaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,7 +1,7 @@
-package cenglisch.appointment.port.adapter.secondary.messaging;
+package cenglisch.port.adapter.secondary.messaging;
 
-import cenglisch.appointment.domain.DomainEvent;
-import cenglisch.appointment.domain.EventHandler;
+import cenglisch.domain.model.DomainEvent;
+import cenglisch.domain.model.EventHandler;
 
 import java.util.*;
 import java.util.function.Consumer;

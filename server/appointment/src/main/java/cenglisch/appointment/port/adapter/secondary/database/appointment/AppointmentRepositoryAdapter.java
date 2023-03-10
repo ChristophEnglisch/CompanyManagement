@@ -22,7 +22,7 @@ public class AppointmentRepositoryAdapter implements AppointmentRepository {
     private AppointmentMapper appointmentMapper;
 
     @Override
-    public Optional<Appointment> findById(AppointmentId appointmentId) {
+    public Optional<Appointment> find(AppointmentId appointmentId) {
         Optional<AppointmentEntity> optionalAppointment = appointmentJpaRepository.findById(appointmentId.getId());
         return optionalAppointment.map(appointmentEntity -> appointmentMapper.mapToAppointment(appointmentEntity));
     }
@@ -34,5 +34,10 @@ public class AppointmentRepositoryAdapter implements AppointmentRepository {
         }
         AppointmentEntity appointmentEntity = appointmentMapper.mapToAppointmentEntity(appointment, participantRepository, appointmentJpaRepository);
         return appointmentMapper.mapToAppointment(appointmentJpaRepository.save(appointmentEntity));
+    }
+
+    @Override
+    public void remove(Appointment appointment) {
+
     }
 }

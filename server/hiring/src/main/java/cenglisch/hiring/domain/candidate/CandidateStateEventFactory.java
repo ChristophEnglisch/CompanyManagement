@@ -4,7 +4,7 @@ import cenglisch.hiring.domain.candidate.event.*;
 import cenglisch.hiring.domain.job.JobId;
 
 public final class CandidateStateEventFactory {
-    public static CandidateEvent make(
+    public static CandidateEventHiring make(
             final CandidateId candidateId,
             final CandidateState candidateState,
             final JobId jobId

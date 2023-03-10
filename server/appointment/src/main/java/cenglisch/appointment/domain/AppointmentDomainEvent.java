@@ -1,6 +1,8 @@
 package cenglisch.appointment.domain;
 
-public interface DomainEvent {
+import cenglisch.domain.model.DomainEvent;
+
+public interface AppointmentDomainEvent extends DomainEvent {
     default String topic() {
         return "appointment";
     }

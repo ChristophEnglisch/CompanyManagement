@@ -1,6 +1,6 @@
 package cenglisch.hiring.domain.interview;
 
-import cenglisch.hiring.domain.Repository;
+import cenglisch.domain.model.Repository;
 import cenglisch.hiring.domain.candidate.CandidateId;
 
 import java.util.Optional;

@@ -1,6 +1,7 @@
 package cenglisch.company.managment.domain.address;
 
-import cenglisch.company.managment.domain.EventHandler;
+
+import cenglisch.domain.model.EventHandler;
 
 import java.util.Optional;
 

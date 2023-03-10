@@ -1,4 +1,4 @@
-package cenglisch.hiring.domain;
+package cenglisch.domain.model;
 
 import java.util.function.Consumer;
 

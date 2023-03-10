@@ -1,9 +1,9 @@
 package cenglisch.appointment.domain.commitment.event;
 
-import cenglisch.appointment.domain.DomainEvent;
+import cenglisch.appointment.domain.AppointmentDomainEvent;
 
-public interface CommitmentEvent extends DomainEvent {
+public interface CommitmentEvent extends AppointmentDomainEvent {
     default String topic() {
-        return DomainEvent.super.topic() + ".commitment";
+        return AppointmentDomainEvent.super.topic() + ".commitment";
     }
 }

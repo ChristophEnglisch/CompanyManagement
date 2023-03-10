@@ -1,6 +1,6 @@
 package cenglisch.company.managment.domain.manager.event;
 
-import cenglisch.company.managment.domain.DomainEvent;
+import cenglisch.company.managment.domain.ManagementDomainEvent;
 
-public interface ManagerEvent extends DomainEvent {
+public interface ManagerEvent extends ManagementDomainEvent {
 }

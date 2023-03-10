@@ -1,12 +1,12 @@
 package cenglisch.company.managment.domain.employee;
 
-import cenglisch.company.managment.domain.EventHandler;
 import cenglisch.company.managment.domain.address.AddressId;
 import cenglisch.company.managment.domain.company.CompanyId;
 import cenglisch.company.managment.domain.employee.events.EmployeeCreated;
 import cenglisch.company.managment.domain.employee.events.EmployeeDismissed;
 import cenglisch.company.managment.domain.employee.events.EmployeeEvent;
 import cenglisch.company.managment.domain.employee.events.EmployeeHired;
+import cenglisch.domain.model.EventHandler;
 
 import java.util.Optional;
 import java.util.function.Consumer;
@@ -24,7 +24,7 @@ public class EmployeeService {
     }
 
     private Optional<Employee> find(EmployeeId employeeId) {
-        return employeeRepository.findById(employeeId);
+        return employeeRepository.find(employeeId);
     }
 
     public void newEmployee(AddressId addressId){

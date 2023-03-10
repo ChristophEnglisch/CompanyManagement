@@ -1,10 +1,10 @@
 package cenglisch.company.managment.domain.company;
 
-import cenglisch.company.managment.domain.EventHandler;
 import cenglisch.company.managment.domain.address.AddressId;
 import cenglisch.company.managment.domain.company.events.CompanyClosed;
 import cenglisch.company.managment.domain.company.events.CompanyOpened;
 import cenglisch.company.managment.domain.manager.ManagerId;
+import cenglisch.domain.model.EventHandler;
 
 public class CompanyService {
     private final CompanyRepository companyRepository;
@@ -24,7 +24,7 @@ public class CompanyService {
     }
 
     public void closeCompany(CompanyId companyId) {
-        final Company company = companyRepository.findById(companyId).orElseThrow(CompanyNotFoundException::new);
+        final Company company = companyRepository.find(companyId).orElseThrow(CompanyNotFoundException::new);
         companyRepository.remove(company);
         eventHandler.publish(new CompanyClosed(companyId));
     }

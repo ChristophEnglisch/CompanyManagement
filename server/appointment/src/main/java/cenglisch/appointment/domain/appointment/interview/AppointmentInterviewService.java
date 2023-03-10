@@ -1,10 +1,10 @@
 package cenglisch.appointment.domain.appointment.interview;
 
-import cenglisch.appointment.domain.EventHandler;
 import cenglisch.appointment.domain.appointment.AppointmentId;
 import cenglisch.appointment.domain.appointment.AppointmentState;
 import cenglisch.appointment.domain.appointment.interview.event.AppointmentInterviewEventFactory;
 import cenglisch.appointment.domain.appointment.interview.event.AppointmentInterviewGenerated;
+import cenglisch.domain.model.EventHandler;
 import org.jmolecules.ddd.annotation.Service;
 
 @Service

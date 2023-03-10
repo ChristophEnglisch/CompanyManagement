@@ -1,9 +1,9 @@
 package cenglisch.appointment.domain.appointment.interview.event;
 
-import cenglisch.appointment.domain.DomainEvent;
+import cenglisch.appointment.domain.AppointmentDomainEvent;
 
-public interface AppointmentInterviewEvent extends DomainEvent {
+public interface AppointmentInterviewEvent extends AppointmentDomainEvent {
     default String topic() {
-        return DomainEvent.super.topic() + ".appointment.interview";
+        return AppointmentDomainEvent.super.topic() + ".appointment.interview";
     }
 }

@@ -1,6 +1,6 @@
 package cenglisch.company.managment.domain.address;
 
-import cenglisch.company.managment.domain.Repository;
+import cenglisch.domain.model.Repository;
 
 import java.util.Optional;
 

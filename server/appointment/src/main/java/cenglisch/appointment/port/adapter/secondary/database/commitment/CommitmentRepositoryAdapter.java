@@ -32,12 +32,22 @@ public class CommitmentRepositoryAdapter implements CommitmentRepository {
         return optionalCommitmentEntity.map(commitmentEntity -> commitmentMapper.toCommitment(commitmentEntity));
     }
 
+    @Override
+    public Optional<Commitment> find(CommitmentId id) {
+        return Optional.empty();
+    }
+
     public Commitment save(Commitment commitment) {
         if (commitment.getCommitmentId() == null){
             commitment.setCommitmentId(new CommitmentId(generateId()));
         }
         commitmentJpaRepository.save(commitmentMapper.toCommitmentEntity(commitment, appointmentJpaRepository, participantJpaRepository));
         return commitment;
+    }
+
+    @Override
+    public void remove(Commitment commitment) {
+
     }
 
     public Collection<Commitment> findByAppointmentId(AppointmentId appointmentId) {

@@ -1,10 +1,10 @@
 package cenglisch.appointment.domain.commitment;
 
-import cenglisch.appointment.domain.EventHandler;
 import cenglisch.appointment.domain.appointment.AppointmentId;
 import cenglisch.appointment.domain.commitment.event.ConfirmedCommitment;
 import cenglisch.appointment.domain.commitment.event.RejectedCommitment;
 import cenglisch.appointment.domain.participant.ParticipantId;
+import cenglisch.domain.model.EventHandler;
 
 import java.util.Collection;
 

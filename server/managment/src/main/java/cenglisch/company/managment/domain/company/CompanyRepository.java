@@ -1,6 +1,6 @@
 package cenglisch.company.managment.domain.company;
 
-import cenglisch.company.managment.domain.Repository;
+import cenglisch.domain.model.Repository;
 
 public interface CompanyRepository extends Repository<Company, CompanyId> {
 }

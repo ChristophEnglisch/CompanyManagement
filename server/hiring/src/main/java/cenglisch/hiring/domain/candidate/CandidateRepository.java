@@ -1,7 +1,7 @@
 package cenglisch.hiring.domain.candidate;
 
 
-import cenglisch.hiring.domain.Repository;
+import cenglisch.domain.model.Repository;
 import cenglisch.hiring.domain.job.JobId;
 import cenglisch.hiring.domain.person.PersonId;
 

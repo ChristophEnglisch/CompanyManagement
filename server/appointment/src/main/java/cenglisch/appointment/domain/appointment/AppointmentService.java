@@ -1,10 +1,10 @@
 package cenglisch.appointment.domain.appointment;
 
-import cenglisch.appointment.domain.EventHandler;
 import cenglisch.appointment.domain.appointment.date.AppointmentDate;
 import cenglisch.appointment.domain.appointment.exception.AppointmentNotFoundException;
 import cenglisch.appointment.domain.participant.ParticipantId;
 import cenglisch.appointment.domain.appointment.event.*;
+import cenglisch.domain.model.EventHandler;
 import org.jmolecules.ddd.annotation.Service;
 
 import java.util.Optional;
@@ -23,7 +23,7 @@ public class AppointmentService {
     }
 
     public Optional<Appointment> find(AppointmentId appointmentId) {
-        return appointmentRepository.findById(appointmentId);
+        return appointmentRepository.find(appointmentId);
     }
 
     public AppointmentId initializeAppointment(ParticipantId participantId) {

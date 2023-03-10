@@ -1,7 +1,7 @@
 package cenglisch.appointment.domain.reminder;
 
-import org.jmolecules.ddd.annotation.Repository;
+import cenglisch.domain.model.Repository;
 
-@Repository
-public interface ReminderRepository {
+@org.jmolecules.ddd.annotation.Repository
+public interface ReminderRepository extends Repository {
 }

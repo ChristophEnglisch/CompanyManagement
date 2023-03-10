@@ -1,8 +1,7 @@
 package cenglisch.hiring.domain.job;
 
-import cenglisch.hiring.domain.EventHandler;
+import cenglisch.domain.model.EventHandler;
 import cenglisch.hiring.domain.job.event.*;
-import cenglisch.hiring.domain.job.exception.JobException;
 import cenglisch.hiring.domain.job.exception.JobNotFoundException;
 
 import java.util.Optional;
@@ -23,7 +22,7 @@ public class JobService {
         return jobRepository.find(jobId);
     }
 
-    private void manageJob(JobId jobId, Consumer<Job> jobConsumer, JobEvent jobEvent) {
+    private void manageJob(JobId jobId, Consumer<Job> jobConsumer, JobEventHiring jobEvent) {
         Job job = find(jobId).orElseThrow(JobNotFoundException::new);
         jobConsumer.accept(job);
         jobRepository.save(job);

@@ -1,6 +1,6 @@
 package cenglisch.hiring.domain.interview;
 
-import cenglisch.hiring.domain.EventHandler;
+import cenglisch.domain.model.EventHandler;
 import cenglisch.hiring.domain.candidate.CandidateId;
 import cenglisch.hiring.domain.interview.exception.InterviewException;
 import cenglisch.hiring.domain.interview.exception.InterviewNotFoundException;

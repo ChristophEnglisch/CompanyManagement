@@ -1,6 +1,6 @@
 package cenglisch.hiring.domain.job;
 
-import cenglisch.hiring.domain.EventHandler;
+import cenglisch.domain.model.EventHandler;
 import cenglisch.hiring.domain.job.event.AddedResponsibleEmployee;
 import cenglisch.hiring.domain.job.event.JobCapacitiesReduced;
 import cenglisch.hiring.domain.job.event.NoMoreCapacitiesAvailable;
