@@ -60,7 +60,7 @@ project(':hiring') {
     }
 }
 
-project(':managment') {
+project(':management') {
     dependencies {
         implementation project(':common')
     }
