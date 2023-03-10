@@ -1,4 +1,8 @@
 # Company Management
+
+The following description, is written in german, but the code and other dependencys are based on the english language.
+It will be worth to translate the following text into english ;) P.S. use deepl.com 
+
 Dieses Projekt soll meinen Umgang mit einer Fullstack Anwendung repräsentieren. <br>
 <br>
 Wieso habe ich mir gerade dieses fachliche Projekt der Firmenverwaltung ausgesucht? <br>
