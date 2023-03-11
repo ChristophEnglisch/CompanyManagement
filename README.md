@@ -4,7 +4,7 @@
 <!-- TOC -->
 * [Company Management](#company-management)
   * [Einleitung](#einleitung)
-* [System](#system)
+* [Infrastructure](#infrastructure)
 * [Architektur](#architektur)
   * [Hexagonal](#hexagonal)
   * [DDD](#ddd)
@@ -23,7 +23,7 @@ Somit soll ein System entstehen, welches verteilte Services bereitstellt.
 Das Projekt wurde zu Beginn aus der Sicht der Fachabteilung geplant.  
 Danach wurde aus der Sicht des Entwicklers Code geschrieben, welcher sich aber nicht von der entstandenen Fachsprache abwendet.
 <br>
-# System
+# Infrastructure
 ![System-Architecture-Backend.png](docs/System-Architecture-Backend.png)
 # Architektur
 ## Hexagonal
