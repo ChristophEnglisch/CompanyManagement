@@ -3,7 +3,6 @@
 ## Table of Contents:
 <!-- TOC -->
 * [Company Management](#company-management)
-  * [Table of Contents:](#table-of-contents-)
   * [Einleitung](#einleitung)
 * [System](#system)
 * [Architektur](#architektur)
