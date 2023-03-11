@@ -1,6 +1,5 @@
 package cenglisch.hiring.application.candidate;
 
-import cenglisch.hiring.domain.candidate.*;
 import cenglisch.hiring.domain.candidate.exception.CandidateException;
 import cenglisch.hiring.domain.interview.InterviewService;
 import cenglisch.hiring.domain.interview.state.InterviewState;
