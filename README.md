@@ -14,11 +14,13 @@ Somit soll ein System entstehen, welches verteilte Services bereitstellt.
 Das Projekt wurde zu Beginn aus der Sicht der Fachabteilung geplant.  
 Danach wurde aus der Sicht des Entwicklers Code geschrieben, welcher sich aber nicht von der entstandenen Fachsprache abwendet.
 <br>
+# System
+![System-Architecture-Backend.png](docs/System-Architecture-Backend.png)
 # Architektur
 
 ## Aus Backend Services
 
-![System-Architecture-Backend.png](docs/System-Architecture-Backend.png)
+
 
 ## Hexagonal
 Austauschbarkeit der Infrastruktur:<br>
@@ -34,8 +36,7 @@ In der Zukunft ist auch geplant die genannten Rahmenwerke auszutauschen und eine
 
 ## DDD
 
-
-
+![System-Architecture-Backend-Archticture.png](docs%2FSystem-Architecture-Backend-Archticture.png)
 
 
 
