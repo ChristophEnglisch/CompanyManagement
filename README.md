@@ -3,11 +3,10 @@
 ## Table of Contents:
 <!-- TOC -->
 * [Company Management](#company-management)
-  * [Content:](#content-)
+  * [Table of Contents:](#table-of-contents-)
   * [Einleitung](#einleitung)
 * [System](#system)
 * [Architektur](#architektur)
-  * [Aus Backend Services](#aus-backend-services)
   * [Hexagonal](#hexagonal)
   * [DDD](#ddd)
 <!-- TOC -->
@@ -28,11 +27,6 @@ Danach wurde aus der Sicht des Entwicklers Code geschrieben, welcher sich aber n
 # System
 ![System-Architecture-Backend.png](docs/System-Architecture-Backend.png)
 # Architektur
-
-## Aus Backend Services
-
-
-
 ## Hexagonal
 Austauschbarkeit der Infrastruktur:<br>
 Nicht nur Frameworks oder Bibliotheken, sondern auch Technologien also sollen ohne Probleme austauschbar sein.<br>
