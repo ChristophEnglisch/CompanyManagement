@@ -9,6 +9,7 @@ Wieso habe ich mir gerade dieses fachliche Projekt der Firmenverwaltung ausgesuc
 Der Grund dafür ist, dass die Prozesse eines solchen Projektes leicht durchschaubar sind und dafür nicht besondere <br>
 Kenntnisse in einem Bereich benötigt werden. <br>
 Mir war es aber trotzdem wichtig, dass viele Module entstehen, welche Unternehmensprozesse abbilden.<br>
+Somit soll ein System entstehen, welches verteilte Services bereitstellt.
 
 Das Projekt wurde zu Beginn aus der Sicht der Fachabteilung geplant.  
 Danach wurde aus der Sicht des Entwicklers Code geschrieben, welcher sich aber nicht von der entstandenen Fachsprache abwendet.  
@@ -27,11 +28,9 @@ Das hat den Charm, dass ich auch auf Frameworks wie Micronaut oder Quarkus auswe
 In der Zukunft ist auch geplant die genannten Rahmenwerke auszutauschen und einen Performancetest durchzuführen.<br>
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-Die Architektur der Anwendung sieht wie folgt aus.<br>
-<br>
+Die Architektur der Backend Anwendung sieht wie folgt aus.<br>
+
+![System-Architecture-Backend.png](docs/System-Architecture-Backend.png)
+
 Es gab auch Services, welche ein Teil eines Schulprojekts waren. <br>
 Diese Präsentation kann man ebenfalls unter dem docs Ordner finden.<br>
