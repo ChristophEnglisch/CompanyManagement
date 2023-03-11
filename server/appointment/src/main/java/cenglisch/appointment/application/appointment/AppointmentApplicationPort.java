@@ -1,10 +1,10 @@
 package cenglisch.appointment.application.appointment;
 
-import cenglisch.appointment.domain.appointment.Appointment;
-import cenglisch.appointment.domain.appointment.exception.AppointmentNotFoundException;
-import cenglisch.appointment.domain.appointment.AppointmentService;
-import cenglisch.appointment.domain.commitment.CommitmentService;
-import cenglisch.appointment.domain.commitment.event.ConfirmedCommitment;
+import cenglisch.appointment.domain.model.appointment.Appointment;
+import cenglisch.appointment.domain.model.appointment.exception.AppointmentNotFoundException;
+import cenglisch.appointment.domain.model.appointment.AppointmentService;
+import cenglisch.appointment.domain.model.commitment.CommitmentService;
+import cenglisch.appointment.domain.model.commitment.event.ConfirmedCommitment;
 import cenglisch.domain.model.EventHandler;
 
 public class AppointmentApplicationPort {

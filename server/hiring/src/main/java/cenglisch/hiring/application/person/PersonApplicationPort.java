@@ -1,7 +1,6 @@
 package cenglisch.hiring.application.person;
 
-import cenglisch.hiring.domain.person.PersonId;
-import cenglisch.hiring.domain.person.PersonService;
+import cenglisch.hiring.domain.model.person.PersonService;
 
 public class PersonApplicationPort {
     private final PersonService personService;

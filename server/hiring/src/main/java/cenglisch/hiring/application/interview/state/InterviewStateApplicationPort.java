@@ -1,7 +1,6 @@
 package cenglisch.hiring.application.interview.state;
 
 import cenglisch.domain.model.EventHandler;
-import cenglisch.hiring.domain.candidate.*;
 import cenglisch.hiring.domain.candidate.event.CandidateApplicationApproved;
 import cenglisch.hiring.domain.candidate.exception.CandidateNotFoundException;
 import cenglisch.hiring.domain.interview.Interview;
@@ -10,8 +9,8 @@ import cenglisch.hiring.domain.interview.InterviewId;
 import cenglisch.hiring.domain.interview.InterviewService;
 import cenglisch.hiring.domain.interview.exception.InterviewNotFoundException;
 import cenglisch.hiring.domain.interview.state.InterviewState;
-import cenglisch.hiring.domain.person.exception.PersonNotFoundException;
-import cenglisch.hiring.domain.person.PersonService;
+import cenglisch.hiring.domain.model.person.exception.PersonNotFoundException;
+import cenglisch.hiring.domain.model.person.PersonService;
 
 public class InterviewStateApplicationPort {
 

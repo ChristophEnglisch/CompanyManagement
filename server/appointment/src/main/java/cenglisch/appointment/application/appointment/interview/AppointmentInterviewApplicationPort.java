@@ -1,12 +1,12 @@
 package cenglisch.appointment.application.appointment.interview;
 
-import cenglisch.appointment.domain.appointment.AppointmentService;
-import cenglisch.appointment.domain.appointment.AppointmentState;
-import cenglisch.appointment.domain.appointment.event.AppointmentAccepted;
-import cenglisch.appointment.domain.appointment.event.AppointmentFinished;
-import cenglisch.appointment.domain.appointment.event.AppointmentLaunched;
-import cenglisch.appointment.domain.appointment.interview.AppointmentInterviewService;
-import cenglisch.appointment.domain.participant.ParticipantService;
+import cenglisch.appointment.domain.model.appointment.AppointmentService;
+import cenglisch.appointment.domain.model.appointment.AppointmentState;
+import cenglisch.appointment.domain.model.appointment.event.AppointmentAccepted;
+import cenglisch.appointment.domain.model.appointment.event.AppointmentFinished;
+import cenglisch.appointment.domain.model.appointment.event.AppointmentLaunched;
+import cenglisch.appointment.domain.model.appointment.interview.AppointmentInterviewService;
+import cenglisch.appointment.domain.model.participant.ParticipantService;
 import cenglisch.domain.model.EventHandler;
 
 public class AppointmentInterviewApplicationPort {

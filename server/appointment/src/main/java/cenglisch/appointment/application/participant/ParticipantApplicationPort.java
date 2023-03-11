@@ -1,6 +1,6 @@
 package cenglisch.appointment.application.participant;
 
-import cenglisch.appointment.domain.participant.ParticipantService;
+import cenglisch.appointment.domain.model.participant.ParticipantService;
 
 public class ParticipantApplicationPort {
     private final ParticipantService participantService;
