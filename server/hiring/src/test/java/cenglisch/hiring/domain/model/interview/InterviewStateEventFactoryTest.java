@@ -1,6 +1,6 @@
 package cenglisch.hiring.domain.model.interview;
 
-import cenglisch.hiring.domain.interview.state.*;
+import cenglisch.hiring.domain.model.interview.state.*;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

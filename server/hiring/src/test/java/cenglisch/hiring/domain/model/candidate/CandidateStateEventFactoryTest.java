@@ -1,7 +1,7 @@
 package cenglisch.hiring.domain.model.candidate;
 
-import cenglisch.hiring.domain.candidate.event.*;
-import cenglisch.hiring.domain.job.JobId;
+import cenglisch.hiring.domain.model.candidate.event.*;
+import cenglisch.hiring.domain.model.job.JobId;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

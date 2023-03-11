@@ -1,7 +1,7 @@
 package cenglisch.hiring.port.adapter.secondary.persistence.job;
 
-import cenglisch.hiring.domain.job.Job;
-import cenglisch.hiring.domain.job.ResponsibleEmployee;
+import cenglisch.hiring.domain.model.job.Job;
+import cenglisch.hiring.domain.model.job.ResponsibleEmployee;
 import cenglisch.hiring.port.adapter.secondary.persistence.person.PersonEntity;
 import cenglisch.hiring.port.adapter.secondary.persistence.person.PersonJpaRepository;
 import org.mapstruct.*;

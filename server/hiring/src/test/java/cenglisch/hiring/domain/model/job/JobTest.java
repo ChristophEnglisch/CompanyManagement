@@ -1,6 +1,6 @@
 package cenglisch.hiring.domain.model.job;
 
-import cenglisch.hiring.domain.job.exception.JobException;
+import cenglisch.hiring.domain.model.job.exception.JobException;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

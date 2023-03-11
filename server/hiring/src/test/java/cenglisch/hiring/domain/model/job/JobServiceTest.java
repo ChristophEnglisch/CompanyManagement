@@ -1,9 +1,9 @@
 package cenglisch.hiring.domain.model.job;
 
 import cenglisch.domain.model.EventHandler;
-import cenglisch.hiring.domain.job.event.AddedResponsibleEmployee;
-import cenglisch.hiring.domain.job.event.JobCapacitiesReduced;
-import cenglisch.hiring.domain.job.event.NoMoreCapacitiesAvailable;
+import cenglisch.hiring.domain.model.job.event.AddedResponsibleEmployee;
+import cenglisch.hiring.domain.model.job.event.JobCapacitiesReduced;
+import cenglisch.hiring.domain.model.job.event.NoMoreCapacitiesAvailable;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

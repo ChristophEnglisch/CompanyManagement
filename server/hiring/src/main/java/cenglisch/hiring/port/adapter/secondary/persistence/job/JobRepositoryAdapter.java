@@ -1,8 +1,8 @@
 package cenglisch.hiring.port.adapter.secondary.persistence.job;
 
-import cenglisch.hiring.domain.job.Job;
-import cenglisch.hiring.domain.job.JobId;
-import cenglisch.hiring.domain.job.JobRepository;
+import cenglisch.hiring.domain.model.job.Job;
+import cenglisch.hiring.domain.model.job.JobId;
+import cenglisch.hiring.domain.model.job.JobRepository;
 import cenglisch.hiring.port.adapter.secondary.persistence.person.PersonJpaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

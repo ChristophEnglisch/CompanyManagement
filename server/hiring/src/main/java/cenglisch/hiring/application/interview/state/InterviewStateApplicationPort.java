@@ -1,14 +1,18 @@
 package cenglisch.hiring.application.interview.state;
 
 import cenglisch.domain.model.EventHandler;
-import cenglisch.hiring.domain.candidate.event.CandidateApplicationApproved;
-import cenglisch.hiring.domain.candidate.exception.CandidateNotFoundException;
-import cenglisch.hiring.domain.interview.Interview;
-import cenglisch.hiring.domain.interview.exception.InterviewException;
-import cenglisch.hiring.domain.interview.InterviewId;
-import cenglisch.hiring.domain.interview.InterviewService;
-import cenglisch.hiring.domain.interview.exception.InterviewNotFoundException;
-import cenglisch.hiring.domain.interview.state.InterviewState;
+import cenglisch.hiring.domain.model.candidate.Candidate;
+import cenglisch.hiring.domain.model.candidate.CandidateId;
+import cenglisch.hiring.domain.model.candidate.CandidateService;
+import cenglisch.hiring.domain.model.candidate.CandidateState;
+import cenglisch.hiring.domain.model.candidate.event.CandidateApplicationApproved;
+import cenglisch.hiring.domain.model.candidate.exception.CandidateNotFoundException;
+import cenglisch.hiring.domain.model.interview.Interview;
+import cenglisch.hiring.domain.model.interview.exception.InterviewException;
+import cenglisch.hiring.domain.model.interview.InterviewId;
+import cenglisch.hiring.domain.model.interview.InterviewService;
+import cenglisch.hiring.domain.model.interview.exception.InterviewNotFoundException;
+import cenglisch.hiring.domain.model.interview.state.InterviewState;
 import cenglisch.hiring.domain.model.person.exception.PersonNotFoundException;
 import cenglisch.hiring.domain.model.person.PersonService;
 

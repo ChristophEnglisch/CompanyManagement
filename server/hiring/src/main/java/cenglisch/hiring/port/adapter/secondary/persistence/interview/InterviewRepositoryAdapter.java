@@ -1,9 +1,9 @@
 package cenglisch.hiring.port.adapter.secondary.persistence.interview;
 
-import cenglisch.hiring.domain.candidate.CandidateId;
-import cenglisch.hiring.domain.interview.Interview;
-import cenglisch.hiring.domain.interview.InterviewId;
-import cenglisch.hiring.domain.interview.InterviewRepository;
+import cenglisch.hiring.domain.model.candidate.CandidateId;
+import cenglisch.hiring.domain.model.interview.Interview;
+import cenglisch.hiring.domain.model.interview.InterviewId;
+import cenglisch.hiring.domain.model.interview.InterviewRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

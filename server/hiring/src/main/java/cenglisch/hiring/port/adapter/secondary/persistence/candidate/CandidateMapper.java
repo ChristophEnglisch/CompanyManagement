@@ -1,6 +1,6 @@
 package cenglisch.hiring.port.adapter.secondary.persistence.candidate;
 
-import cenglisch.hiring.domain.candidate.Candidate;
+import cenglisch.hiring.domain.model.candidate.Candidate;
 import org.mapstruct.InjectionStrategy;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;

@@ -5,9 +5,9 @@ import cenglisch.hiring.application.interview.state.InterviewStateApplicationPor
 import cenglisch.hiring.application.interview.type.InterviewTypeApplicationPort;
 import cenglisch.hiring.application.job.JobApplicationPort;
 import cenglisch.hiring.application.person.PersonApplicationPort;
-import cenglisch.hiring.domain.candidate.CandidateService;
-import cenglisch.hiring.domain.interview.InterviewService;
-import cenglisch.hiring.domain.job.JobService;
+import cenglisch.hiring.domain.model.candidate.CandidateService;
+import cenglisch.hiring.domain.model.interview.InterviewService;
+import cenglisch.hiring.domain.model.job.JobService;
 import cenglisch.hiring.domain.model.person.PersonService;
 import cenglisch.hiring.port.adapter.secondary.persistence.candidate.CandidateRepositoryAdapter;
 import cenglisch.hiring.port.adapter.secondary.persistence.interview.InterviewRepositoryAdapter;

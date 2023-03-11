@@ -1,11 +1,11 @@
 package cenglisch.hiring.application.job;
 
 import cenglisch.domain.model.EventHandler;
-import cenglisch.hiring.domain.candidate.CandidateRepository;
-import cenglisch.hiring.domain.candidate.event.CandidateAdopted;
-import cenglisch.hiring.domain.job.exception.JobException;
-import cenglisch.hiring.domain.job.JobId;
-import cenglisch.hiring.domain.job.JobService;
+import cenglisch.hiring.domain.model.candidate.CandidateRepository;
+import cenglisch.hiring.domain.model.candidate.event.CandidateAdopted;
+import cenglisch.hiring.domain.model.job.exception.JobException;
+import cenglisch.hiring.domain.model.job.JobId;
+import cenglisch.hiring.domain.model.job.JobService;
 
 public class JobApplicationPort {
     private final JobService jobService;

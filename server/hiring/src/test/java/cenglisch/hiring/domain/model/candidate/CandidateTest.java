@@ -1,7 +1,7 @@
 package cenglisch.hiring.domain.model.candidate;
 
-import cenglisch.hiring.domain.candidate.exception.CandidateException;
-import cenglisch.hiring.domain.job.JobId;
+import cenglisch.hiring.domain.model.candidate.exception.CandidateException;
+import cenglisch.hiring.domain.model.job.JobId;
 import cenglisch.hiring.domain.model.person.PersonId;
 import org.junit.jupiter.api.Test;
 

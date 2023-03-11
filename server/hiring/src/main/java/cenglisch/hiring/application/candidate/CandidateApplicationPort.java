@@ -1,10 +1,14 @@
 package cenglisch.hiring.application.candidate;
 
-import cenglisch.hiring.domain.candidate.exception.CandidateException;
-import cenglisch.hiring.domain.interview.InterviewService;
-import cenglisch.hiring.domain.interview.state.InterviewState;
-import cenglisch.hiring.domain.job.JobId;
-import cenglisch.hiring.domain.job.JobService;
+import cenglisch.hiring.domain.model.candidate.Candidate;
+import cenglisch.hiring.domain.model.candidate.CandidateId;
+import cenglisch.hiring.domain.model.candidate.CandidateService;
+import cenglisch.hiring.domain.model.candidate.CandidateState;
+import cenglisch.hiring.domain.model.candidate.exception.CandidateException;
+import cenglisch.hiring.domain.model.interview.InterviewService;
+import cenglisch.hiring.domain.model.interview.state.InterviewState;
+import cenglisch.hiring.domain.model.job.JobId;
+import cenglisch.hiring.domain.model.job.JobService;
 
 public class CandidateApplicationPort {
     private final CandidateService candidateService;

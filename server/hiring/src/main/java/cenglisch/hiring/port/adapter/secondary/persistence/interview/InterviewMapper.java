@@ -1,6 +1,6 @@
 package cenglisch.hiring.port.adapter.secondary.persistence.interview;
 
-import cenglisch.hiring.domain.interview.Interview;
+import cenglisch.hiring.domain.model.interview.Interview;
 import org.mapstruct.InjectionStrategy;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;

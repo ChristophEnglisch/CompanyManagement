@@ -1,8 +1,8 @@
 package cenglisch.hiring.port.adapter.secondary.persistence.interview;
 
 import cenglisch.Default;
-import cenglisch.hiring.domain.interview.state.InterviewState;
-import cenglisch.hiring.domain.interview.type.InterviewType;
+import cenglisch.hiring.domain.model.interview.state.InterviewState;
+import cenglisch.hiring.domain.model.interview.type.InterviewType;
 
 import jakarta.persistence.*;
 

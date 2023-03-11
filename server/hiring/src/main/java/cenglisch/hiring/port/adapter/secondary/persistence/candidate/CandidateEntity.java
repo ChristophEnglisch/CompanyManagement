@@ -1,7 +1,7 @@
 package cenglisch.hiring.port.adapter.secondary.persistence.candidate;
 
 import cenglisch.Default;
-import cenglisch.hiring.domain.candidate.CandidateState;
+import cenglisch.hiring.domain.model.candidate.CandidateState;
 import jakarta.persistence.*;
 
 @Entity

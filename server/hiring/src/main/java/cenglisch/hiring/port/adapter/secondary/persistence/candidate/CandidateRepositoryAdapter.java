@@ -1,9 +1,9 @@
 package cenglisch.hiring.port.adapter.secondary.persistence.candidate;
 
-import cenglisch.hiring.domain.candidate.Candidate;
-import cenglisch.hiring.domain.candidate.CandidateId;
-import cenglisch.hiring.domain.candidate.CandidateRepository;
-import cenglisch.hiring.domain.job.JobId;
+import cenglisch.hiring.domain.model.candidate.Candidate;
+import cenglisch.hiring.domain.model.candidate.CandidateId;
+import cenglisch.hiring.domain.model.candidate.CandidateRepository;
+import cenglisch.hiring.domain.model.job.JobId;
 import cenglisch.hiring.domain.model.person.PersonId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

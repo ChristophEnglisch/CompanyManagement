@@ -1,10 +1,10 @@
 package cenglisch.hiring.domain.model.interview;
 
 
-import cenglisch.hiring.domain.candidate.CandidateId;
-import cenglisch.hiring.domain.interview.exception.InterviewException;
-import cenglisch.hiring.domain.interview.state.InterviewState;
-import cenglisch.hiring.domain.interview.type.InterviewType;
+import cenglisch.hiring.domain.model.candidate.CandidateId;
+import cenglisch.hiring.domain.model.interview.exception.InterviewException;
+import cenglisch.hiring.domain.model.interview.state.InterviewState;
+import cenglisch.hiring.domain.model.interview.type.InterviewType;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

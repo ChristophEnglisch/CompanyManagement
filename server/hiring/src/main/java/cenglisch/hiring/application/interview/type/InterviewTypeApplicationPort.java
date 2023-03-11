@@ -1,7 +1,7 @@
 package cenglisch.hiring.application.interview.type;
 
-import cenglisch.hiring.domain.interview.InterviewService;
-import cenglisch.hiring.domain.interview.type.InterviewType;
+import cenglisch.hiring.domain.model.interview.InterviewService;
+import cenglisch.hiring.domain.model.interview.type.InterviewType;
 
 public class InterviewTypeApplicationPort {
     private final InterviewService interviewService;

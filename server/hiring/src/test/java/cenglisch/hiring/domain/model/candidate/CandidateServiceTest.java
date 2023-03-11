@@ -1,10 +1,10 @@
 package cenglisch.hiring.domain.model.candidate;
 
 import cenglisch.domain.model.EventHandler;
-import cenglisch.hiring.domain.candidate.event.CandidateApplicationAccepted;
-import cenglisch.hiring.domain.candidate.event.CandidateApplicationApproved;
-import cenglisch.hiring.domain.candidate.exception.CandidateException;
-import cenglisch.hiring.domain.job.JobId;
+import cenglisch.hiring.domain.model.candidate.event.CandidateApplicationAccepted;
+import cenglisch.hiring.domain.model.candidate.event.CandidateApplicationApproved;
+import cenglisch.hiring.domain.model.candidate.exception.CandidateException;
+import cenglisch.hiring.domain.model.job.JobId;
 import cenglisch.hiring.domain.model.person.PersonId;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
