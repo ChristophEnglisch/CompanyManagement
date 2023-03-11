@@ -1,7 +1,18 @@
 # Company Management
 
-The following description, is written in german, but the code and other dependencys are based on the english language.
-It will be worth to translate the following text into english ;) P.S. use deepl.com 
+## Table of Contents:
+<!-- TOC -->
+* [Company Management](#company-management)
+  * [Content:](#content-)
+  * [Einleitung](#einleitung)
+* [System](#system)
+* [Architektur](#architektur)
+  * [Aus Backend Services](#aus-backend-services)
+  * [Hexagonal](#hexagonal)
+  * [DDD](#ddd)
+<!-- TOC -->
+
+The following description is written in German, but the code and other dependencies are based on the English language. It will be worth to translate the following text into English ;) P.S. use deepl.com
 
 ## Einleitung
 Dieses Projekt soll meinen Umgang mit einer Fullstack Anwendung repräsentieren. <br>
