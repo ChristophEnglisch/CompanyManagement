@@ -9,29 +9,22 @@ public class ParticipantEntity {
     @Id
     @Column(name = "id", nullable = false)
     private String id;
-    @Column
-    private String name;
-    @Column
-    private String email;
+
+    private String personId;
 
     public ParticipantEntity(){}
 
     @Default
-    public ParticipantEntity(String id, String name, String email) {
+    public ParticipantEntity(String id, String personId) {
         this.id = id;
-        this.name = name;
-        this.email = email;
+        this.personId = personId;
     }
 
     public String getId() {
         return id;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public String getEmail() {
-        return email;
+    public String getPersonId() {
+        return personId;
     }
 }

@@ -1,45 +1,36 @@
 package cenglisch.appointment.domain.model.participant;
 
 import cenglisch.Default;
+import cenglisch.domain.model.PersonId;
 
 public class Participant {
     private ParticipantId participantId;
-    private String name;
-    private String email;
 
-    public Participant(final String name, final String email) {
-        setName(name);
-        setEmail(email);
+    private PersonId personId;
+
+    public Participant(final PersonId personId) {
+        setPersonId(personId);
     }
 
     @Default
-    public Participant(final ParticipantId participantId, final String name, final String email) {
+    public Participant(final ParticipantId participantId, final PersonId personId) {
         setParticipantId(participantId);
-        setName(name);
-        setEmail(email);
+        setPersonId(personId);
     }
 
     public void setParticipantId(ParticipantId participantId) {
         this.participantId = participantId;
     }
 
-    private void setName(String name) {
-        this.name = name;
-    }
-
-    private void setEmail(String email) {
-        this.email = email;
+    private void setPersonId(PersonId personId) {
+        this.personId = personId;
     }
 
     public ParticipantId getParticipantId() {
         return participantId;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public String getEmail() {
-        return email;
+    public PersonId getPersonId() {
+        return personId;
     }
 }

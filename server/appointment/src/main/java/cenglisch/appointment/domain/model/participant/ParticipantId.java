@@ -1,8 +1,6 @@
 package cenglisch.appointment.domain.model.participant;
 
-import org.jmolecules.ddd.annotation.ValueObject;
-
-@ValueObject
+@org.jmolecules.ddd.annotation.ValueObject
 public class ParticipantId {
 
     private String id;

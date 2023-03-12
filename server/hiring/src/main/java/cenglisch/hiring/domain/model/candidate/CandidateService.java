@@ -5,7 +5,7 @@ import cenglisch.hiring.domain.model.candidate.exception.CandidateApplicationExc
 import cenglisch.hiring.domain.model.candidate.exception.CandidateException;
 import cenglisch.hiring.domain.model.candidate.exception.CandidateNotFoundException;
 import cenglisch.hiring.domain.model.job.JobId;
-import cenglisch.hiring.domain.model.person.PersonId;
+import cenglisch.domain.model.PersonId;
 
 import java.util.Optional;
 

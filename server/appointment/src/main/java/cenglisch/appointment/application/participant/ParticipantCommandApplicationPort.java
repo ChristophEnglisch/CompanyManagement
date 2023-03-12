@@ -1,6 +1,7 @@
 package cenglisch.appointment.application.participant;
 
 import cenglisch.appointment.domain.model.participant.ParticipantService;
+import cenglisch.domain.model.PersonId;
 
 public class ParticipantCommandApplicationPort {
     private final ParticipantService participantService;
@@ -10,6 +11,6 @@ public class ParticipantCommandApplicationPort {
     }
 
     public void newParticipant(NewParticipant newParticipant) {
-        participantService.newParticipant(newParticipant.name(), newParticipant.email());
+        participantService.newParticipant(newParticipant.personId());
     }
 }

@@ -1,10 +1,10 @@
 package cenglisch.appointment.application.appointment.interview;
 
 import cenglisch.appointment.domain.model.appointment.interview.AppointmentInterviewId;
+import cenglisch.domain.model.PersonId;
 
 public record GenerateInterviewAppointment(
-    String candidateEmail,
-    String candidateFullName,
-    AppointmentInterviewId interviewId
+    AppointmentInterviewId interviewId,
+    PersonId personId
 ) {
 }

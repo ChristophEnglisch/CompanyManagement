@@ -32,8 +32,7 @@ public class AppointmentCommandInterviewApplicationPort {
                 generateInterviewAppointment.interviewId(),
                 appointmentService.initializeAppointment(
                         participantService.newParticipant(
-                                generateInterviewAppointment.candidateFullName(),
-                                generateInterviewAppointment.candidateEmail()
+                                generateInterviewAppointment.personId()
                         )
                 )
         );

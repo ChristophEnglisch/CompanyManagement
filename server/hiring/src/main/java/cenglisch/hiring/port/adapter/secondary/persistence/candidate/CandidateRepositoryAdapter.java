@@ -4,7 +4,7 @@ import cenglisch.hiring.domain.model.candidate.Candidate;
 import cenglisch.hiring.domain.model.candidate.CandidateId;
 import cenglisch.hiring.domain.model.candidate.CandidateRepository;
 import cenglisch.hiring.domain.model.job.JobId;
-import cenglisch.hiring.domain.model.person.PersonId;
+import cenglisch.domain.model.PersonId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

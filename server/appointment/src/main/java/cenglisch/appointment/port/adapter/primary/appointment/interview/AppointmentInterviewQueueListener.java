@@ -15,7 +15,6 @@ public class AppointmentInterviewQueueListener {
 
     @RabbitListener(queues = "hiring.interview.state.generated")
     public void generateAppointmentInterview(GenerateInterviewAppointment generateInterviewAppointment){
-        //TODO fetch personal informations
         appointmentCommandInterviewApplicationPort.generateAppointmentInterview(generateInterviewAppointment);
     }
 

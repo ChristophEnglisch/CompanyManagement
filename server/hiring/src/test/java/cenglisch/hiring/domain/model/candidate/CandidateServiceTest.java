@@ -5,7 +5,7 @@ import cenglisch.hiring.domain.model.candidate.event.CandidateApplicationAccepte
 import cenglisch.hiring.domain.model.candidate.event.CandidateApplicationApproved;
 import cenglisch.hiring.domain.model.candidate.exception.CandidateException;
 import cenglisch.hiring.domain.model.job.JobId;
-import cenglisch.hiring.domain.model.person.PersonId;
+import cenglisch.domain.model.PersonId;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

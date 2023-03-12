@@ -1,5 +1,7 @@
 package cenglisch.appointment.application.participant;
 
-public record NewParticipant(String name, String email) {
+import cenglisch.domain.model.PersonId;
+
+public record NewParticipant(PersonId personId) {
 
 }

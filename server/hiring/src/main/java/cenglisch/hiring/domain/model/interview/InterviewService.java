@@ -10,7 +10,6 @@ import cenglisch.hiring.domain.model.interview.state.InterviewStateEventFactory;
 import cenglisch.hiring.domain.model.interview.type.InterviewHeldOffline;
 import cenglisch.hiring.domain.model.interview.type.InterviewHeldOnline;
 import cenglisch.hiring.domain.model.interview.type.InterviewType;
-import cenglisch.hiring.domain.model.person.Person;
 
 import java.util.Optional;
 

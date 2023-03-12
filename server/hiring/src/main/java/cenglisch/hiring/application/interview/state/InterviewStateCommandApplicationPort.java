@@ -12,19 +12,16 @@ import cenglisch.hiring.domain.model.interview.InterviewId;
 import cenglisch.hiring.domain.model.interview.InterviewService;
 import cenglisch.hiring.domain.model.interview.exception.InterviewNotFoundException;
 import cenglisch.hiring.domain.model.interview.state.InterviewState;
-import cenglisch.hiring.domain.model.person.PersonService;
 
 public class InterviewStateCommandApplicationPort {
 
     private final InterviewService interviewService;
 
     private final CandidateService candidateService;
-    private final PersonService personService;
 
-    public InterviewStateCommandApplicationPort(final InterviewService interviewService, final CandidateService candidateService, final PersonService personService, final EventHandler eventHandler) {
+    public InterviewStateCommandApplicationPort(final InterviewService interviewService, final CandidateService candidateService, final EventHandler eventHandler) {
         this.interviewService = interviewService;
         this.candidateService = candidateService;
-        this.personService = personService;
 
         eventHandler.subscribe(
                 CandidateApplicationApproved.class, event -> {
