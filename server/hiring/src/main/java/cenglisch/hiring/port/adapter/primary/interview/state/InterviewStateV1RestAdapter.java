@@ -10,23 +10,23 @@ import org.springframework.web.bind.annotation.*;
 public class InterviewStateV1RestAdapter {
 
     @Autowired
-    private InterviewStateApplicationPort interviewStateApplicationPort;
+    private InterviewStateCommandApplicationPort interviewStateCommandApplicationPort;
 
     @PostMapping("acceptInterview")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void acceptInterview(@RequestBody AcceptInterview acceptInterview) {
-        interviewStateApplicationPort.acceptInterview(acceptInterview);
+        interviewStateCommandApplicationPort.acceptInterview(acceptInterview);
     }
 
     @PostMapping("launchInterview")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void launchInterview(@RequestBody LaunchInterview launchInterview) {
-        interviewStateApplicationPort.launchInterview(launchInterview);
+        interviewStateCommandApplicationPort.launchInterview(launchInterview);
     }
 
     @PostMapping("endInterviewExecution")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void endInterviewExecution(@RequestBody EndInterviewExecution endInterviewExecution){
-        interviewStateApplicationPort.endInterviewExecution(endInterviewExecution);
+        interviewStateCommandApplicationPort.endInterviewExecution(endInterviewExecution);
     }
 }

@@ -1,8 +1,8 @@
 package cenglisch.appointment.startup;
 
-import cenglisch.appointment.application.appointment.AppointmentApplicationPort;
-import cenglisch.appointment.application.appointment.interview.AppointmentInterviewApplicationPort;
-import cenglisch.appointment.application.participant.ParticipantApplicationPort;
+import cenglisch.appointment.application.appointment.AppointmentCommandApplicationPort;
+import cenglisch.appointment.application.appointment.interview.AppointmentCommandInterviewApplicationPort;
+import cenglisch.appointment.application.participant.ParticipantCommandApplicationPort;
 import cenglisch.appointment.domain.model.appointment.AppointmentService;
 import cenglisch.appointment.domain.model.appointment.interview.AppointmentInterviewService;
 import cenglisch.appointment.domain.model.commitment.CommitmentService;
@@ -31,8 +31,8 @@ public class BeanConfiguration {
     }
 
     @Bean
-    public AppointmentApplicationPort appointmentApplicationPort(){
-        return new AppointmentApplicationPort(appointmentService(), commitmentService(), jmsEventPublisherAdapter);
+    public AppointmentCommandApplicationPort appointmentApplicationPort(){
+        return new AppointmentCommandApplicationPort(appointmentService(), commitmentService(), jmsEventPublisherAdapter);
     }
 
     @Autowired
@@ -44,8 +44,8 @@ public class BeanConfiguration {
     }
 
     @Bean
-    public ParticipantApplicationPort participantApplicationPort(){
-        return new ParticipantApplicationPort(participantService());
+    public ParticipantCommandApplicationPort participantApplicationPort(){
+        return new ParticipantCommandApplicationPort(participantService());
     }
 
     @Autowired
@@ -65,7 +65,7 @@ public class BeanConfiguration {
     }
 
     @Bean
-    public AppointmentInterviewApplicationPort appointmentInterviewApplicationPort(){
-        return new AppointmentInterviewApplicationPort(participantService(), appointmentInterviewService(), appointmentService(), jmsEventPublisherAdapter);
+    public AppointmentCommandInterviewApplicationPort appointmentInterviewApplicationPort(){
+        return new AppointmentCommandInterviewApplicationPort(participantService(), appointmentInterviewService(), appointmentService(), jmsEventPublisherAdapter);
     }
 }

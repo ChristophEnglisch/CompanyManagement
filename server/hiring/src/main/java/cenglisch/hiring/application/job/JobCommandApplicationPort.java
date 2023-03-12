@@ -7,12 +7,12 @@ import cenglisch.hiring.domain.model.job.exception.JobException;
 import cenglisch.hiring.domain.model.job.JobId;
 import cenglisch.hiring.domain.model.job.JobService;
 
-public class JobApplicationPort {
+public class JobCommandApplicationPort {
     private final JobService jobService;
 
     private final CandidateRepository candidateRepository;
 
-    public JobApplicationPort(JobService jobService, CandidateRepository candidateRepository, EventHandler eventHandler) {
+    public JobCommandApplicationPort(JobService jobService, CandidateRepository candidateRepository, EventHandler eventHandler) {
         this.jobService = jobService;
         this.candidateRepository = candidateRepository;
         eventHandler.subscribe(
@@ -23,11 +23,8 @@ public class JobApplicationPort {
     }
 
     private boolean jobAlreadyHasApplicants(JobId jobId) {
+        //TODO move to Query Application Port
         return candidateRepository.existsByJobId(jobId);
-    }
-
-    private void manageJob(JobId jobId){
-
     }
 
     public void newJobPosting(NewJobPosting newJobPosting) {

@@ -9,7 +9,7 @@ import cenglisch.appointment.domain.model.appointment.interview.AppointmentInter
 import cenglisch.appointment.domain.model.participant.ParticipantService;
 import cenglisch.domain.model.EventHandler;
 
-public class AppointmentInterviewApplicationPort {
+public class AppointmentCommandInterviewApplicationPort {
 
     private final ParticipantService participantService;
 
@@ -17,7 +17,7 @@ public class AppointmentInterviewApplicationPort {
 
     private final AppointmentService appointmentService;
 
-    public AppointmentInterviewApplicationPort(ParticipantService participantService, AppointmentInterviewService appointmentInterviewService, AppointmentService appointmentService, EventHandler eventHandler) {
+    public AppointmentCommandInterviewApplicationPort(ParticipantService participantService, AppointmentInterviewService appointmentInterviewService, AppointmentService appointmentService, EventHandler eventHandler) {
         this.participantService = participantService;
         this.appointmentInterviewService = appointmentInterviewService;
         this.appointmentService = appointmentService;

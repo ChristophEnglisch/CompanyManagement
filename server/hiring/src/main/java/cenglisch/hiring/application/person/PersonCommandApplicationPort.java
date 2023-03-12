@@ -2,10 +2,10 @@ package cenglisch.hiring.application.person;
 
 import cenglisch.hiring.domain.model.person.PersonService;
 
-public class PersonApplicationPort {
+public class PersonCommandApplicationPort {
     private final PersonService personService;
 
-    public PersonApplicationPort(final PersonService personService) {
+    public PersonCommandApplicationPort(final PersonService personService) {
         this.personService = personService;
     }
 

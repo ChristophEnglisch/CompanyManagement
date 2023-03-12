@@ -7,12 +7,12 @@ import cenglisch.appointment.domain.model.commitment.CommitmentService;
 import cenglisch.appointment.domain.model.commitment.event.ConfirmedCommitment;
 import cenglisch.domain.model.EventHandler;
 
-public class AppointmentApplicationPort {
+public class AppointmentCommandApplicationPort {
 
     private final AppointmentService appointmentService;
     private final CommitmentService commitmentService;
 
-    public AppointmentApplicationPort(AppointmentService appointmentService, CommitmentService commitmentService, EventHandler eventHandler) {
+    public AppointmentCommandApplicationPort(AppointmentService appointmentService, CommitmentService commitmentService, EventHandler eventHandler) {
         this.appointmentService = appointmentService;
         this.commitmentService = commitmentService;
 

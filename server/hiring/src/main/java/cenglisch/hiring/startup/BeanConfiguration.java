@@ -1,10 +1,10 @@
 package cenglisch.hiring.startup;
 
-import cenglisch.hiring.application.candidate.CandidateApplicationPort;
-import cenglisch.hiring.application.interview.state.InterviewStateApplicationPort;
-import cenglisch.hiring.application.interview.type.InterviewTypeApplicationPort;
-import cenglisch.hiring.application.job.JobApplicationPort;
-import cenglisch.hiring.application.person.PersonApplicationPort;
+import cenglisch.hiring.application.candidate.CandidateCommandApplicationPort;
+import cenglisch.hiring.application.interview.state.InterviewStateCommandApplicationPort;
+import cenglisch.hiring.application.interview.type.InterviewTypeCommandApplicationPort;
+import cenglisch.hiring.application.job.JobCommandApplicationPort;
+import cenglisch.hiring.application.person.PersonCommandApplicationPort;
 import cenglisch.hiring.domain.model.candidate.CandidateService;
 import cenglisch.hiring.domain.model.interview.InterviewService;
 import cenglisch.hiring.domain.model.job.JobService;
@@ -33,8 +33,8 @@ public class BeanConfiguration {
     }
 
     @Bean
-    PersonApplicationPort personApplicationPort() {
-        return new PersonApplicationPort(personService());
+    PersonCommandApplicationPort personApplicationPort() {
+        return new PersonCommandApplicationPort(personService());
     }
 
 
@@ -42,8 +42,8 @@ public class BeanConfiguration {
     private CandidateRepositoryAdapter candidateRepositoryAdapter;
 
     @Bean
-    CandidateApplicationPort candidateApplicationPort() {
-        return new CandidateApplicationPort(candidateService(), interviewService(), jobService());
+    CandidateCommandApplicationPort candidateApplicationPort() {
+        return new CandidateCommandApplicationPort(candidateService(), interviewService(), jobService());
     }
 
     @Bean
@@ -56,13 +56,13 @@ public class BeanConfiguration {
     private InterviewRepositoryAdapter interviewRepositoryAdapter;
 
     @Bean
-    InterviewTypeApplicationPort interviewTypeApplicationPort() {
-        return new InterviewTypeApplicationPort(interviewService());
+    InterviewTypeCommandApplicationPort interviewTypeApplicationPort() {
+        return new InterviewTypeCommandApplicationPort(interviewService());
     }
 
     @Bean
-    InterviewStateApplicationPort interviewStateApplicationPort() {
-        return new InterviewStateApplicationPort(
+    InterviewStateCommandApplicationPort interviewStateApplicationPort() {
+        return new InterviewStateCommandApplicationPort(
                 interviewService(),
                 candidateService(),
                 personService(),
@@ -84,7 +84,7 @@ public class BeanConfiguration {
     }
 
     @Bean
-    JobApplicationPort jobApplicationPort() {
-        return new JobApplicationPort(jobService(), candidateRepositoryAdapter, eventHandler);
+    JobCommandApplicationPort jobApplicationPort() {
+        return new JobCommandApplicationPort(jobService(), candidateRepositoryAdapter, eventHandler);
     }
 }

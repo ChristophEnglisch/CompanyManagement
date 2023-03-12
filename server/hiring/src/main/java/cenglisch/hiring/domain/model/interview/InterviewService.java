@@ -37,16 +37,14 @@ public class InterviewService {
         return interview.getInterviewState() == interviewState;
     }
 
-    public void newInterview(final CandidateId candidateId, final Person person) {
+    public void newInterview(final CandidateId candidateId) {
         findByCandidateId(candidateId).ifPresent(s -> {
             throw new InterviewException("candidate already assigned to interview");
         });
         Interview interview = interviewRepository.save(new Interview(candidateId));
         eventHandler.publish(
                 new InterviewGenerated(
-                        interview.getInterviewId(),
-                        person.getFirstname() + " " + person.getLastname(),
-                        person.getEmail()
+                        interview.getInterviewId()
                 )
         );
     }

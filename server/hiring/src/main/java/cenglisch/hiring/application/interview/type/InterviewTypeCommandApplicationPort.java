@@ -3,10 +3,10 @@ package cenglisch.hiring.application.interview.type;
 import cenglisch.hiring.domain.model.interview.InterviewService;
 import cenglisch.hiring.domain.model.interview.type.InterviewType;
 
-public class InterviewTypeApplicationPort {
+public class InterviewTypeCommandApplicationPort {
     private final InterviewService interviewService;
 
-    public InterviewTypeApplicationPort(InterviewService interviewService) {
+    public InterviewTypeCommandApplicationPort(InterviewService interviewService) {
         this.interviewService = interviewService;
     }
 

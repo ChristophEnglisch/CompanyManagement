@@ -1,7 +1,7 @@
 package cenglisch.hiring.port.adapter.primary.person;
 
 import cenglisch.hiring.application.person.DeposePersonalInformation;
-import cenglisch.hiring.application.person.PersonApplicationPort;
+import cenglisch.hiring.application.person.PersonCommandApplicationPort;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -10,11 +10,11 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("v1/person")
 public class PersonV1RestAdapter {
     @Autowired
-    private PersonApplicationPort personApplicationPort;
+    private PersonCommandApplicationPort personCommandApplicationPort;
     @PostMapping
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deposePersonalInformation(@RequestBody DeposePersonalInformation deposePersonalInformation) {
-        personApplicationPort.deposePersonalInformation(deposePersonalInformation);
+        personCommandApplicationPort.deposePersonalInformation(deposePersonalInformation);
     }
 
 }

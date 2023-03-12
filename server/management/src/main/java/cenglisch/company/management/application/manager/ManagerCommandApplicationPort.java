@@ -5,11 +5,11 @@ import cenglisch.company.management.domain.company.events.CompanyOpened;
 import cenglisch.company.management.domain.manager.ManagerService;
 import cenglisch.domain.model.EventHandler;
 
-public class ManagerApplicationPort {
+public class ManagerCommandApplicationPort {
 
     private final ManagerService managerService;
 
-    public ManagerApplicationPort(final ManagerService managerService, final EventHandler eventHandler) {
+    public ManagerCommandApplicationPort(final ManagerService managerService, final EventHandler eventHandler) {
         this.managerService = managerService;
 
         eventHandler.subscribe(CompanyOpened.class, event -> {

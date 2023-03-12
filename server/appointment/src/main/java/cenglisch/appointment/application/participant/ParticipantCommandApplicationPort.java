@@ -2,10 +2,10 @@ package cenglisch.appointment.application.participant;
 
 import cenglisch.appointment.domain.model.participant.ParticipantService;
 
-public class ParticipantApplicationPort {
+public class ParticipantCommandApplicationPort {
     private final ParticipantService participantService;
 
-    public ParticipantApplicationPort(ParticipantService participantService) {
+    public ParticipantCommandApplicationPort(ParticipantService participantService) {
         this.participantService = participantService;
     }
 

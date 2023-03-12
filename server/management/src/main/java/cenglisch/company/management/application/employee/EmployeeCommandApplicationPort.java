@@ -2,11 +2,11 @@ package cenglisch.company.management.application.employee;
 
 import cenglisch.company.management.domain.employee.EmployeeService;
 
-public class EmployeeApplicationPort {
+public class EmployeeCommandApplicationPort {
 
     private final EmployeeService employeeService;
 
-    public EmployeeApplicationPort(EmployeeService employeeService) {
+    public EmployeeCommandApplicationPort(EmployeeService employeeService) {
         this.employeeService = employeeService;
     }
 

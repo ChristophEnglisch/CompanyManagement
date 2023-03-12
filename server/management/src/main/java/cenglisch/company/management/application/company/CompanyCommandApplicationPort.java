@@ -3,12 +3,12 @@ package cenglisch.company.management.application.company;
 import cenglisch.company.management.domain.address.AddressService;
 import cenglisch.company.management.domain.company.CompanyService;
 
-public class CompanyApplicationPort {
+public class CompanyCommandApplicationPort {
 
     private final CompanyService companyService;
     private final AddressService addressService;
 
-    public CompanyApplicationPort(CompanyService companyService, AddressService addressService) {
+    public CompanyCommandApplicationPort(CompanyService companyService, AddressService addressService) {
         this.companyService = companyService;
         this.addressService = addressService;
     }

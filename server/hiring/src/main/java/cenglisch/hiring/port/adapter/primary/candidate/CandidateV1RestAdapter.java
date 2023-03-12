@@ -9,35 +9,35 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("v1/candidate")
 public class CandidateV1RestAdapter {
     @Autowired
-    private CandidateApplicationPort candidateApplicationPort;
+    private CandidateCommandApplicationPort candidateCommandApplicationPort;
 
     @PostMapping("candidateApplies")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void candidateApplies(@RequestBody CandidateApplies candidateApplies) {
-        candidateApplicationPort.candidateApplies(candidateApplies);
+        candidateCommandApplicationPort.candidateApplies(candidateApplies);
     }
 
     @PostMapping("approveCandidateApplication")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void approveCandidateApplication(@RequestBody ApproveCandidateApplication approveCandidateApplication) {
-        candidateApplicationPort.approveCandidateApplication(approveCandidateApplication);
+        candidateCommandApplicationPort.approveCandidateApplication(approveCandidateApplication);
     }
 
     @PostMapping("rejectCandidateApplication")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void rejectCandidateApplication(@RequestBody RejectCandidateApplication rejectCandidateApplication) {
-        candidateApplicationPort.rejectCandidateApplication(rejectCandidateApplication);
+        candidateCommandApplicationPort.rejectCandidateApplication(rejectCandidateApplication);
     }
 
     @PostMapping("adoptCandidate")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void adoptCandidate(@RequestBody AdoptCandidate adoptCandidate) {
-        candidateApplicationPort.adoptCandidate(adoptCandidate);
+        candidateCommandApplicationPort.adoptCandidate(adoptCandidate);
     }
 
     @PostMapping("rejectCandidate")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void rejectCandidate(@RequestBody RejectCandidate rejectCandidate) {
-        candidateApplicationPort.rejectCandidate(rejectCandidate);
+        candidateCommandApplicationPort.rejectCandidate(rejectCandidate);
     }
 }

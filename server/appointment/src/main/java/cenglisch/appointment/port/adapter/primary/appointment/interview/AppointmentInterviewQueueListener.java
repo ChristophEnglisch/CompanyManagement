@@ -1,7 +1,7 @@
 package cenglisch.appointment.port.adapter.primary.appointment.interview;
 
 
-import cenglisch.appointment.application.appointment.interview.AppointmentInterviewApplicationPort;
+import cenglisch.appointment.application.appointment.interview.AppointmentCommandInterviewApplicationPort;
 import cenglisch.appointment.application.appointment.interview.GenerateInterviewAppointment;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,11 +11,12 @@ import org.springframework.stereotype.Component;
 public class AppointmentInterviewQueueListener {
 
     @Autowired
-    private AppointmentInterviewApplicationPort appointmentInterviewApplicationPort;
+    private AppointmentCommandInterviewApplicationPort appointmentCommandInterviewApplicationPort;
 
     @RabbitListener(queues = "hiring.interview.state.generated")
     public void generateAppointmentInterview(GenerateInterviewAppointment generateInterviewAppointment){
-        appointmentInterviewApplicationPort.generateAppointmentInterview(generateInterviewAppointment);
+        //TODO fetch personal informations
+        appointmentCommandInterviewApplicationPort.generateAppointmentInterview(generateInterviewAppointment);
     }
 
     /*

@@ -1,7 +1,6 @@
 package cenglisch.hiring.application.interview.state;
 
 import cenglisch.domain.model.EventHandler;
-import cenglisch.hiring.domain.model.candidate.Candidate;
 import cenglisch.hiring.domain.model.candidate.CandidateId;
 import cenglisch.hiring.domain.model.candidate.CandidateService;
 import cenglisch.hiring.domain.model.candidate.CandidateState;
@@ -13,17 +12,16 @@ import cenglisch.hiring.domain.model.interview.InterviewId;
 import cenglisch.hiring.domain.model.interview.InterviewService;
 import cenglisch.hiring.domain.model.interview.exception.InterviewNotFoundException;
 import cenglisch.hiring.domain.model.interview.state.InterviewState;
-import cenglisch.hiring.domain.model.person.exception.PersonNotFoundException;
 import cenglisch.hiring.domain.model.person.PersonService;
 
-public class InterviewStateApplicationPort {
+public class InterviewStateCommandApplicationPort {
 
     private final InterviewService interviewService;
 
     private final CandidateService candidateService;
     private final PersonService personService;
 
-    public InterviewStateApplicationPort(final InterviewService interviewService, final CandidateService candidateService, final PersonService personService, final EventHandler eventHandler) {
+    public InterviewStateCommandApplicationPort(final InterviewService interviewService, final CandidateService candidateService, final PersonService personService, final EventHandler eventHandler) {
         this.interviewService = interviewService;
         this.candidateService = candidateService;
         this.personService = personService;
@@ -36,10 +34,11 @@ public class InterviewStateApplicationPort {
     }
 
     private void generateInterview(final CandidateId candidateId) {
-        Candidate candidate = candidateService.find(candidateId).orElseThrow(CandidateNotFoundException::new);
+        if(candidateService.find(candidateId).isEmpty()){
+            throw new CandidateNotFoundException();
+        }
         interviewService.newInterview(
-                candidateId,
-                personService.find(candidate.getPersonId()).orElseThrow(PersonNotFoundException::new)
+                candidateId
         );
     }
 

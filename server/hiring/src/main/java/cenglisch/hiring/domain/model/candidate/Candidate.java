@@ -7,7 +7,6 @@ import cenglisch.hiring.domain.model.job.JobId;
 import cenglisch.hiring.domain.model.person.PersonId;
 
 public class Candidate extends Entity {
-
     private CandidateId candidateId;
     private PersonId personId;
     private CandidateState candidateState;
