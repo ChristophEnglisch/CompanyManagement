@@ -4,7 +4,6 @@ import cenglisch.Default;
 import cenglisch.hiring.domain.model.Entity;
 import cenglisch.hiring.domain.model.candidate.exception.CandidateException;
 import cenglisch.hiring.domain.model.job.JobId;
-import cenglisch.hiring.domain.model.person.PersonId;
 
 public class Candidate extends Entity {
     private CandidateId candidateId;
